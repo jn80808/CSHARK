@@ -38,6 +38,7 @@ public class Part2
     }
 }
 
+//Variable inside of the method  
 public class ScopeOfVariableInsideMethod //variable the accessible only inside of the method block 
 {
 
@@ -56,6 +57,7 @@ public class ScopeOfVariableInsideMethod //variable the accessible only inside o
     }
 }
 
+//Shared Variable 
 public class ScopeOfVariableShared //variable the accessible to any method block inside of the class 
 {
 
@@ -77,7 +79,8 @@ public class ScopeOfVariableShared //variable the accessible to any method block
 }
 
 //keyword : static , readonly , constant 
-public class ScopeOfVariableKeyWord //variable the accessible to any method block inside of the class 
+//@STATIC Variable 
+public class ScopeOfVariableSTATIC 
 {
 
     int sampleLocalIntGlobal ; // variable that share to all method since naka declare mismo sya sa class not inside of the method 
@@ -101,14 +104,110 @@ public class ScopeOfVariableKeyWord //variable the accessible to any method bloc
 
     public static void SampleSTATICMethod1 ()
     {
-        sampleLocalIntGlobal = 13; // but here accessing not static variable getting error since the method declare public static void and means yung mga variable na hindi static is not accessble here 
+        //sampleLocalIntGlobal = 13; // but here accessing not static variable getting error since the method declare public static void and means yung mga variable na hindi static is not accessble here 
         samplevarSTATICInt = 14;
     }
 
 }
 
+//@STATIC Class
+
+public static class  ScopeOfClassSTATIC 
+{
+    static int samplevarSTATICInt ;
+    public static void SampleSTATICMethod1()
+    {
+        samplevarSTATICInt = 14;
+        Console.WriteLine("Static variable value: " + samplevarSTATICInt);
+    }
+
+}
+
+//@READ ONLY Variables
+//read only variable is can be use only one time 
+// can be use in constructor or during for initialization
+public class ScopeOfVariableReadOnly 
+{
+    int sampleLocalIntGlobal ; // variable that share to all method since naka declare mismo sya sa class not inside of the method 
+    readonly long samplevarreadonly1 = 10; //sample of read only use during initialize value 
+    readonly int samplevarreadonly2 ; 
+
+    // Constructor to initialize readonly fields
+    public ScopeOfVariableReadOnly()
+    {
+        samplevarreadonly1 = 30; // and then we can still modify the initial value assigned inside of the contructor 
+        samplevarreadonly2 = 20; // Assigned a value in the constructor
+    }
+
+       public void SampleMethodReadOnly1() // here sa method we cannot assigned value of readonly variable since we can only assigned value of readonly variable during initialization and in the constructor but we can still access it inside of the method just read 
+    {
+        // Read and use the readonly variable
+        Console.WriteLine("samplevarreadonly1: {0}", samplevarreadonly1);
+        Console.WriteLine("samplevarreadonly2: {0}", samplevarreadonly2);
+
+        // samplevarreadonly1 = 50; // Error: Cannot assign to readonly field
+    }
+
+}
 
 
+//Constant variable 
+public class ScopeOfVariableConst 
+{
+    int sampleLocalIntGlobal  ; // variable that share to all method since naka declare mismo sya sa class not inside of the method 
+    int sampleLocalIntGlobal1 = 20;
+    const long samplevarConst1 = 10; 
+    const float mathPI = 3.14F ;  // if using constant variable we cannot change the declare value 
+ 
+    // Constructor to initialize readonly fields
+    public ScopeOfVariableConst()
+    {
+        //mathPI = 3.144F; // as you can sa constructor is pag nag reassigned tayo ng value is nag eeror padin since sa const variable you can just initialize value during declaring the variable you cannot change it even its in contructor and method 
+        sampleLocalIntGlobal = 19;
+        sampleLocalIntGlobal1 = 22; // as you can i modify the value of globalvar/shared value  here and can modify the value 
+    }
+
+    public void VarConstMethod ()
+    {
+        Console.WriteLine ("Constant Value of Var1 {0}", samplevarConst1); 
+        Console.WriteLine ("Constant Value of Var {0} and {1}", samplevarConst1, mathPI); 
+        Console.WriteLine ("Gloabal Var  {0}", sampleLocalIntGlobal); 
+        Console.WriteLine ("Gloabal Var1  {0}", sampleLocalIntGlobal1); 
+    }
+
+}
+
+
+//Code Region to Organized the Code 
+//by declaring default = #region  -- declare the name of the region --
+// sample : #region -- STATIC VARIABLE -- 
+// And then add lang ng #endregion
+//Example : so the purpose on this is pwede natin sya i-colapse 
+public class ScopeOfREGION 
+{
+    #region  -- Fields -- 
+    int sampleLocalIntGlobal  ; // variable that share to all method since naka declare mismo sya sa class not inside of the method 
+    int sampleLocalIntGlobal1 = 20;
+    const long samplevarConst1 = 10; 
+    const float mathPI = 3.14F ;  // if using constant variable we cannot change the declare value 
+ 
+    // Constructor to initialize readonly fields
+    public ScopeOfREGION()
+    {
+        //mathPI = 3.144F; // as you can sa constructor is pag nag reassigned tayo ng value is nag eeror padin since sa const variable you can just initialize value during declaring the variable you cannot change it even its in contructor and method 
+        sampleLocalIntGlobal = 19;
+        sampleLocalIntGlobal1 = 22; // as you can i modify the value of globalvar/shared value  here and can modify the value 
+    }
+
+    public void VarConstMethod ()
+    {
+        Console.WriteLine ("Constant Value of Var1 {0}", samplevarConst1); 
+        Console.WriteLine ("Constant Value of Var {0} and {1}", samplevarConst1, mathPI); 
+        Console.WriteLine ("Gloabal Var  {0}", sampleLocalIntGlobal); 
+        Console.WriteLine ("Gloabal Var1  {0}", sampleLocalIntGlobal1); 
+    }
+#endregion
+}
 
 
 

@@ -9,8 +9,10 @@ using NamespaceName;
 
 
 
-//ADD New Console Code: dotnet new console -n InputsApp
-
+/*ADD New Console Code: dotnet new console -n Part4_Inputs
+in terminal from main filepath change and map it into : cd Part4_Inputs
+para yung  Part4_Inputs yung mag run 
+*/
 
 // var part1 = new Part1();
 // part1.Execute();

@@ -1,0 +1,15 @@
+C:\Users\Admin\Desktop\app\Part6_Array_Enumerable\bin\Debug\net8.0\Part6_Array_Enumerable.exe
+C:\Users\Admin\Desktop\app\Part6_Array_Enumerable\bin\Debug\net8.0\Part6_Array_Enumerable.deps.json
+C:\Users\Admin\Desktop\app\Part6_Array_Enumerable\bin\Debug\net8.0\Part6_Array_Enumerable.runtimeconfig.json
+C:\Users\Admin\Desktop\app\Part6_Array_Enumerable\bin\Debug\net8.0\Part6_Array_Enumerable.dll
+C:\Users\Admin\Desktop\app\Part6_Array_Enumerable\bin\Debug\net8.0\Part6_Array_Enumerable.pdb
+C:\Users\Admin\Desktop\app\Part6_Array_Enumerable\obj\Debug\net8.0\Part6_Array_Enumerable.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Desktop\app\Part6_Array_Enumerable\obj\Debug\net8.0\Part6_Array_Enumerable.AssemblyInfoInputs.cache
+C:\Users\Admin\Desktop\app\Part6_Array_Enumerable\obj\Debug\net8.0\Part6_Array_Enumerable.AssemblyInfo.cs
+C:\Users\Admin\Desktop\app\Part6_Array_Enumerable\obj\Debug\net8.0\Part6_Array_Enumerable.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\app\Part6_Array_Enumerable\obj\Debug\net8.0\Part6_Array_Enumerable.sourcelink.json
+C:\Users\Admin\Desktop\app\Part6_Array_Enumerable\obj\Debug\net8.0\Part6_Array_Enumerable.dll
+C:\Users\Admin\Desktop\app\Part6_Array_Enumerable\obj\Debug\net8.0\refint\Part6_Array_Enumerable.dll
+C:\Users\Admin\Desktop\app\Part6_Array_Enumerable\obj\Debug\net8.0\Part6_Array_Enumerable.pdb
+C:\Users\Admin\Desktop\app\Part6_Array_Enumerable\obj\Debug\net8.0\Part6_Array_Enumerable.genruntimeconfig.cache
+C:\Users\Admin\Desktop\app\Part6_Array_Enumerable\obj\Debug\net8.0\ref\Part6_Array_Enumerable.dll

@@ -6,14 +6,18 @@ using System.ComponentModel;
 
 // Part2.cs
 using System;
+using System.Security.Cryptography.X509Certificates;
 
 
 // Part 2 : local Variables , Var Scope , Keywords , Class vs Instance Variable , Parsing , Convert 
 
 
+// ----------- local Variables , Var Scope , Keywords ----------- //
 
 public class Part2
 {
+
+    #region -- PART 2 --
     public void Execute()
     {
             //WET and DRY Principle
@@ -36,12 +40,14 @@ public class Part2
             Console.WriteLine("Scope of variable"); // Adds a blank line
 
     }
+
+    #endregion
 }
 
 //Variable inside of the method  
 public class ScopeOfVariableInsideMethod //variable the accessible only inside of the method block 
 {
-
+    #region  -- Variable inside of the method --
     public void SampleMethod1()
     {
     
@@ -55,11 +61,14 @@ public class ScopeOfVariableInsideMethod //variable the accessible only inside o
     {
         int sample2Int =1;
     }
+
+    #endregion
 }
 
 //Shared Variable 
 public class ScopeOfVariableShared //variable the accessible to any method block inside of the class 
 {
+    #region  -- Shared Variable --
 
     int sampleLocalIntGlobal ; // variable that share to all method since naka declare mismo sya sa class not inside of the method 
     public void SampleMethod1()
@@ -76,13 +85,17 @@ public class ScopeOfVariableShared //variable the accessible to any method block
         int sampleLocalIntGlobal =12;
          Console.WriteLine("SM2: {0}",  sampleLocalIntGlobal);
     }
+
+    #endregion
 }
+
+
 
 //keyword : static , readonly , constant 
 //@STATIC Variable 
 public class ScopeOfVariableSTATIC 
 {
-
+    #region  -- STATIC VAR -- 
     int sampleLocalIntGlobal ; // variable that share to all method since naka declare mismo sya sa class not inside of the method 
     static int samplevarSTATICInt ;
     public void SampleMethod1()
@@ -90,7 +103,7 @@ public class ScopeOfVariableSTATIC
     
         int sampleLocalIntGlobal = 1;
         var sampleLocalDouble = 1.5;
-        samplevarSTATICInt = 11; // accessing static variable in public void only will not show error 
+        samplevarSTATICInt = 11; // accessing static variable 
         
         Console.WriteLine("SM1: {0}",  sampleLocalIntGlobal);
     }
@@ -108,18 +121,23 @@ public class ScopeOfVariableSTATIC
         samplevarSTATICInt = 14;
     }
 
+    #endregion
+
 }
 
 //@STATIC Class
 
 public static class  ScopeOfClassSTATIC 
 {
+    #region  -- STATIC CLASS -- 
+
     static int samplevarSTATICInt ;
     public static void SampleSTATICMethod1()
     {
         samplevarSTATICInt = 14;
         Console.WriteLine("Static variable value: " + samplevarSTATICInt);
     }
+    #endregion
 
 }
 
@@ -128,6 +146,7 @@ public static class  ScopeOfClassSTATIC
 // can be use in constructor or during for initialization
 public class ScopeOfVariableReadOnly 
 {
+    #region  -- read only --
     int sampleLocalIntGlobal ; // variable that share to all method since naka declare mismo sya sa class not inside of the method 
     readonly long samplevarreadonly1 = 10; //sample of read only use during initialize value 
     readonly int samplevarreadonly2 ; 
@@ -148,12 +167,15 @@ public class ScopeOfVariableReadOnly
         // samplevarreadonly1 = 50; // Error: Cannot assign to readonly field
     }
 
+    #endregion
+
 }
 
 
 //Constant variable 
 public class ScopeOfVariableConst 
 {
+    #region  -- Constant Var -- 
     int sampleLocalIntGlobal  ; // variable that share to all method since naka declare mismo sya sa class not inside of the method 
     int sampleLocalIntGlobal1 = 20;
     const long samplevarConst1 = 10; 
@@ -175,6 +197,8 @@ public class ScopeOfVariableConst
         Console.WriteLine ("Gloabal Var1  {0}", sampleLocalIntGlobal1); 
     }
 
+    #endregion
+
 }
 
 
@@ -185,7 +209,7 @@ public class ScopeOfVariableConst
 //Example : so the purpose on this is pwede natin sya i-colapse 
 public class ScopeOfREGION 
 {
-    #region  -- Fields -- 
+    #region  -- region sample  -- 
     int sampleLocalIntGlobal  ; // variable that share to all method since naka declare mismo sya sa class not inside of the method 
     int sampleLocalIntGlobal1 = 20;
     const long samplevarConst1 = 10; 
@@ -209,6 +233,24 @@ public class ScopeOfREGION
 #endregion
 }
 
+
+
+
+/// ------- Class Variables & Instance Variables  ------- /// <summary>
+
+
+// Class Variable vs Instane Variable
+// Class Variable : yung class variable is naka attached mismo sa type, pag sinabing type yan yung custome data type which is yung Class1 natin : public class Class1 
+// Instance Variable : 
+public class Class1 
+{
+    #region  -- Class Variable -- 
+    public static int sampleStaticOrClassVariableInt = 3; //static variable is a class variable 
+    public int samplePublicInt = 500; // public variable is instance variable : kaya sya tinawag na instance variable kasi need mona mag create ng instance ng class bago maaccess yung public variable natin  
+    private int samplePrivateInt = 100; // private var : can only access inside of the class cannot be access outside of the class 
+
+    #endregion
+}
 
 
 

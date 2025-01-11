@@ -1,7 +1,16 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
 using System;
+using System.Collections;
 using System.ComponentModel;
+using System.Runtime.Intrinsics.X86;
+using App.Fruits;
+using NamespaceName;
+
+
+
+//ADD New Console Code: dotnet new console -n InputsApp
+
 
 // var part1 = new Part1();
 // part1.Execute();
@@ -30,9 +39,11 @@ Console.WriteLine("");
 
 Console.WriteLine("***************");
 var varstatic = new ScopeOfVariableSTATIC();
-//varstatic.SampleSTATICMethod1(); // nag eerror kasi not accessable sya since yung class is non-static it can only access the non static method 
-//static class with static method 
-// So Directly calling na yung static method pag static no need to declare variable to store the class
+/* - varstatic.SampleSTATICMethod1(); 
+   - nag eerror kasi not accessable sya since yung class is non-static it can only access the non static method 
+   - static class with static method 
+   - So Directly calling na yung static method pag static no need to declare variable to store the class
+*/
 Console.WriteLine("-- STATIC VAR --");
 ScopeOfClassSTATIC.SampleSTATICMethod1(); 
 
@@ -56,6 +67,7 @@ Console.WriteLine("");
 
 /// ------- Class Variables & Instance Variables  ------- ///
 
+#region  -- Class Var & Instance -- 
 Console.WriteLine("***************");
 Console.WriteLine("-- PUBLIC --");
 var class1 = new  Class1 ();
@@ -82,6 +94,7 @@ string textOne = "3";
 var intOne = int.Parse(textOne);
 var result = intOne * 5;
 Console.WriteLine("result of pasred variable: {0}",result);
+
 //Convert : may tab for ToInt16:short , ToInt32 , ToInt64:long
 string varToConvert = "13";
 var vartoint = Convert.ToInt32(varToConvert);
@@ -122,9 +135,67 @@ else
     Console.WriteLine($"Not a Number: {textFour} AHA");
 }
 
+#endregion
 
 
 
+/// ------- NameSpace  ------- ///
 
+#region -- NameSpace --
+Console.WriteLine("");
+Console.WriteLine("***************");
+Console.WriteLine("-- NameSpace --");
+var s = new ClassName();
+ s.PrintMessageJoy();
+
+/// ------- NameSpace of Fruits ------- ///
+Console.WriteLine("");
+Console.WriteLine("***************");
+Console.WriteLine("-- NameSpace of Fruits  --");
+/* using System;
+ using System.Collections.Generic; // For Queue
+*/ 
+
+
+var apple = new fuitsOfAppleandBanana();
+Console.WriteLine ("apple {0}", apple);
+
+            // Using the Banana class
+            var banana = new Banana();
+            banana.PrintBanana();
+
+            // Using the Apple class
+            var apple1 = new Apple();
+            apple1.PrintApple();
+
+//No Output 
+namespace App.Fruits
+{
+    class fuitsOfAppleandBanana
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("This is Namespace for Fruits");
+
+            // Creating a Queue object
+            var queue = new Queue();
+
+            Console.WriteLine("Queue Count: " + queue.Count);
+
+            // Using the Banana class
+            var banana = new Banana();
+            banana.PrintBanana();
+
+            // Using the Apple class
+            var apple = new Apple();
+            apple.PrintApple();
+        }
+    }
+}
+
+#endregion
+
+
+/// ------- Input Expression  ------- ///
 
 

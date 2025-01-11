@@ -1,0 +1,15 @@
+C:\Users\Admin\Desktop\app\Part4_Inputs_Expression\bin\Debug\net8.0\Part4_Inputs_Expression.exe
+C:\Users\Admin\Desktop\app\Part4_Inputs_Expression\bin\Debug\net8.0\Part4_Inputs_Expression.deps.json
+C:\Users\Admin\Desktop\app\Part4_Inputs_Expression\bin\Debug\net8.0\Part4_Inputs_Expression.runtimeconfig.json
+C:\Users\Admin\Desktop\app\Part4_Inputs_Expression\bin\Debug\net8.0\Part4_Inputs_Expression.dll
+C:\Users\Admin\Desktop\app\Part4_Inputs_Expression\bin\Debug\net8.0\Part4_Inputs_Expression.pdb
+C:\Users\Admin\Desktop\app\Part4_Inputs_Expression\obj\Debug\net8.0\Part4_Inputs_Expression.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Desktop\app\Part4_Inputs_Expression\obj\Debug\net8.0\Part4_Inputs_Expression.AssemblyInfoInputs.cache
+C:\Users\Admin\Desktop\app\Part4_Inputs_Expression\obj\Debug\net8.0\Part4_Inputs_Expression.AssemblyInfo.cs
+C:\Users\Admin\Desktop\app\Part4_Inputs_Expression\obj\Debug\net8.0\Part4_Inputs_Expression.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\app\Part4_Inputs_Expression\obj\Debug\net8.0\Part4_Inputs_Expression.sourcelink.json
+C:\Users\Admin\Desktop\app\Part4_Inputs_Expression\obj\Debug\net8.0\Part4_Inputs_Expression.dll
+C:\Users\Admin\Desktop\app\Part4_Inputs_Expression\obj\Debug\net8.0\refint\Part4_Inputs_Expression.dll
+C:\Users\Admin\Desktop\app\Part4_Inputs_Expression\obj\Debug\net8.0\Part4_Inputs_Expression.pdb
+C:\Users\Admin\Desktop\app\Part4_Inputs_Expression\obj\Debug\net8.0\Part4_Inputs_Expression.genruntimeconfig.cache
+C:\Users\Admin\Desktop\app\Part4_Inputs_Expression\obj\Debug\net8.0\ref\Part4_Inputs_Expression.dll

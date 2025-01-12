@@ -1,0 +1,15 @@
+C:\Users\Admin\Desktop\app\Part9_Function_Method\bin\Debug\net8.0\Part9_Function_Method.exe
+C:\Users\Admin\Desktop\app\Part9_Function_Method\bin\Debug\net8.0\Part9_Function_Method.deps.json
+C:\Users\Admin\Desktop\app\Part9_Function_Method\bin\Debug\net8.0\Part9_Function_Method.runtimeconfig.json
+C:\Users\Admin\Desktop\app\Part9_Function_Method\bin\Debug\net8.0\Part9_Function_Method.dll
+C:\Users\Admin\Desktop\app\Part9_Function_Method\bin\Debug\net8.0\Part9_Function_Method.pdb
+C:\Users\Admin\Desktop\app\Part9_Function_Method\obj\Debug\net8.0\Part9_Function_Method.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Desktop\app\Part9_Function_Method\obj\Debug\net8.0\Part9_Function_Method.AssemblyInfoInputs.cache
+C:\Users\Admin\Desktop\app\Part9_Function_Method\obj\Debug\net8.0\Part9_Function_Method.AssemblyInfo.cs
+C:\Users\Admin\Desktop\app\Part9_Function_Method\obj\Debug\net8.0\Part9_Function_Method.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\app\Part9_Function_Method\obj\Debug\net8.0\Part9_Function_Method.sourcelink.json
+C:\Users\Admin\Desktop\app\Part9_Function_Method\obj\Debug\net8.0\Part9_Function_Method.dll
+C:\Users\Admin\Desktop\app\Part9_Function_Method\obj\Debug\net8.0\refint\Part9_Function_Method.dll
+C:\Users\Admin\Desktop\app\Part9_Function_Method\obj\Debug\net8.0\Part9_Function_Method.pdb
+C:\Users\Admin\Desktop\app\Part9_Function_Method\obj\Debug\net8.0\Part9_Function_Method.genruntimeconfig.cache
+C:\Users\Admin\Desktop\app\Part9_Function_Method\obj\Debug\net8.0\ref\Part9_Function_Method.dll

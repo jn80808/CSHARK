@@ -13,9 +13,9 @@ namespace App.Fruits
             Console.WriteLine();
 
             
-            // --------------------------------------------------------------------
-            // ------- AGREGATION LAMBDA ONLY Means not Available in LINQ --------
-            // --------------------------------------------------------------------
+            // ------------------------------------------
+            // ------- AGREGATION IN  LAMBDA  --------
+            // ------------------------------------------
             #region  -- AGREGATION LAMBDA ONLY Means not Available in LINQ  --
             Console.WriteLine("*********************");
             Console.WriteLine (" -- AGREGATION THAT AVAILABLE IN LAMNDA   -- ");
@@ -49,9 +49,9 @@ namespace App.Fruits
             #endregion
 
 
-            // --------------------------------------------------------------------
-            // ------- CONVERTION LAMBDA ONLY Means not Available in LINQ --------
-            // --------------------------------------------------------------------
+            // ------------------------------------------
+            // ------- CONVERTION IN LAMBDA  --------
+            // ------------------------------------------
             #region  -- CONVERTION LAMBDA ONLY Means not Available in LINQ  --
             Console.WriteLine("*********************");
             Console.WriteLine (" -- CONVERTION THAT AVAILABLE IN LAMNDA   -- ");
@@ -73,9 +73,9 @@ namespace App.Fruits
             #endregion 
 
 
-            // ------------------------------------------------------------------------------------
-            // ------- BASIC ELEMENT ACCESS FUNCTION OF  LAMBDA ONLY Means not Available in LINQ --------
-            // ------------------------------------------------------------------------------------
+            // -----------------------------------------------------------
+            // ------- BASIC ELEMENT ACCESS FUNCTION OF LAMBDA --------
+            // -----------------------------------------------------------
             #region  --BASIC ELEMENT ACCESS FUNCTION OF  LAMBDA ONLY Means not Available in LINQ  --
             Console.WriteLine("*********************");
             Console.WriteLine (" -- BASIC ELEMENT ACCESS FUNCTION THAT AVAILABLE IN LAMNDA   -- ");
@@ -103,9 +103,9 @@ namespace App.Fruits
             #endregion
 
 
-            // ------------------------------------------------------------------------------------
-            // ------- PARTITIONING OF LAMBDA ONLY Means not Available in LINQ --------
-            // ------------------------------------------------------------------------------------
+            // ------------------------------------------
+            // ------- PARTITIONING ON LAMBDA  --------
+            // ------------------------------------------
             #region  -- PARTITIONING OF LAMBDA ONLY Means not Available in LINQ  --
             Console.WriteLine("*********************");
             Console.WriteLine (" -- PARTITIONING OF   -- ");
@@ -132,8 +132,41 @@ namespace App.Fruits
             #endregion
 
 
+            // --------------------------------------------------------------------------------------
+            // ------- Commonly use Function in LAMBDA DISTINCT , EXCEPT, INTERSECT , UNION  --------
+            // ---------------------------------------------------------------------------------------
+            #region  -- Commonly use Function in LAMBDA  --
+            Console.WriteLine("*********************");
+            Console.WriteLine (" -- Commonly use Function in LAMBDA   -- ");
+            Console.WriteLine ();
+
+            Console.WriteLine ("----- DISTINCT ----");
+            var repeatedNumbers = new []  {1,2,3,1,5,1,1,2};
+            var distinctNumbers = repeatedNumbers.Distinct();
+
+            Console.WriteLine($"Distinc: {string.Join(",", distinctNumbers)}");
+
+            Console.WriteLine ();
+            Console.WriteLine ("----- EXCLUDED USING EXCEPT ----");
+            var excludeNumbers = new [] {5, 6, 7};
+            var newNumbers = numbers.Except(excludeNumbers); 
+            Console.WriteLine($"Exclude: {string.Join(",",newNumbers)}");
+
+            Console.WriteLine ();
+            Console.WriteLine ("----- INTERSECT ----");
+            var numbers1 = Enumerable.Range(1, 10); //equivalent to {1,2,3,4,5,6,7,8,9,10} //shortcut to make 1 - 10 
+            var checkerNumbers = new int [] { 1, 9, 10, 11, 12};
+            var intersectedNumbers = numbers1.Intersect(checkerNumbers); //Intersect means kung ano lang meron na value dun sa number1 na meron sa checkerNumber yun lang ireturn nya 
+            Console.WriteLine ($"Intersect: {string.Join(",", intersectedNumbers)}");
 
 
+            Console.WriteLine ();
+            Console.WriteLine ("-----APPEND & UNION  ----");
+            var appendNumbers = new [] {10, 11, 12, 13};
+            var unionNumbers = numbers.Union(appendNumbers);
+            Console.WriteLine ($"Union: {string.Join(",", unionNumbers )}");
+
+            #endregion
            
         }
     }

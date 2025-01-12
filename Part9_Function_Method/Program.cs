@@ -219,6 +219,58 @@ namespace Function_Method
                 #endregion
 
 
+                //Example 8 : Using Out in Parameter 
+                #region  --  Using Out in Parameter  --
+
+                Console.WriteLine();
+                Console.WriteLine("********* --  Example 8 --  *********");
+                Console.WriteLine("--  Using Out in Parameter  --");
+                Console.WriteLine();
+
+
+                var Function_Method8 = new Function_Method ();
+
+
+                // Test case 1: Division by zero
+                string message1;
+                int result1 = Function_Method8.Process(10, 0, out message1);
+                Console.WriteLine($"Result1: {result1}, Message: {message1}");
+
+                // Test case 2: Valid division
+                string message2;
+                int result2 = Function_Method8.Process(10, 2, out message2);
+                Console.WriteLine($"Result2: {result2}, Message: {message2}");
+
+                // Test case 3: Valid division
+                //string message3;
+                int result3 = Function_Method8.Process(20, 2, out string message3); // here sa loob tayo nag add ng datatype na string 
+                if (string.IsNullOrEmpty(message3))
+                    Console.WriteLine($"Result3 : {result3}");
+                else 
+                    Console.WriteLine($"Result3 : {message3}");
+
+                #endregion
+
+
+                //Example 9 : Using Recursive Function  
+                #region  --   Using Recursive Function  --
+                
+                Console.WriteLine();
+                Console.WriteLine("********* --  Example 9 --  *********");
+                Console.WriteLine("--  Using Out in Parameter  --");
+
+                var Function_Method9 = new Function_Method ();
+
+                // Factorial of 3 : 3 = 3 * 2 * 1
+                Console.WriteLine($"Factorial of 3: {Function_Method9.SampleFactorial(3)}");
+
+                // Factorial of 5 : 5 = 5 * 4 * 3 * 2 * 1 
+                Console.WriteLine($"Factorial of 5: {Function_Method9.SampleFactorial(5)}");
+            
+
+
+                #endregion
+
 
 
                 }
@@ -411,6 +463,53 @@ namespace Function_Method
         }
 
         #endregion
+
+
+        //Example 8 : Using Out in Parameter 
+        #region  --  Using Out in Parameter  --
+
+            //ang ginagawa ng out is yung function mo is pabalik na kung san man to tinawag is sasama sya , tas yung dala dala nyang value is aassigned nya lang sa variable na nakalagay sa parameter na yan
+            /*
+            1st Param : int a
+            2nd Param : int b
+            3rd Param : out string messages --parameter name : message  and yung out parameter natin is string yung data type , yung out parameter is required na mag assigned ka ng  value inside of the block of code as we can see yung message = null nag assigned lang sya ng value na null  
+            */
+
+            public int Process(int a, int b, out string messages) // <access specifier> : public , <Return Type> : int data type , <Function Name> :Process , (Parameters) : int a, int b, out string messages
+            {
+                messages = null; // as per discuss in out parameter required nya mag assigned ng initial value inside of the block of code so ayan nag initial value tayo ng null 
+
+                if (b == 0)
+                {
+                    messages = "Can't divide by 0";
+                    return 0; // Return a default value for invalid operation
+                }
+
+                messages = "Operation successful";
+                return a / b;
+            }
+
+        #endregion
+
+
+
+        //Example 9 : Using Recursive Function  
+        #region  --   Using Recursive Function  --
+
+        // Recursive Function  : Is tinatawag nya lang yung sarili nya sa loob ng function nya , parang while loop lang sya na balik lang sya ng balik , kaya need natin din mag lagay ng termination kasi pag hindi mag infinit lang sya nag mag rurun  
+        public int SampleFactorial(int number)
+        {
+            if (number == 1)
+                return number; // Base case: return 1 when number reaches 1
+
+            return number * SampleFactorial(number - 1); // Recursive call
+        }
+
+
+        #endregion
+
+
+
 
 
     }

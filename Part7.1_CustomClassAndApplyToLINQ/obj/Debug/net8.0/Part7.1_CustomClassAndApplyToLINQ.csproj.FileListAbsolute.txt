@@ -1,0 +1,15 @@
+C:\Users\Admin\Desktop\app\Part7.1_CustomClassAndApplyToLINQ\bin\Debug\net8.0\Part7.1_CustomClassAndApplyToLINQ.exe
+C:\Users\Admin\Desktop\app\Part7.1_CustomClassAndApplyToLINQ\bin\Debug\net8.0\Part7.1_CustomClassAndApplyToLINQ.deps.json
+C:\Users\Admin\Desktop\app\Part7.1_CustomClassAndApplyToLINQ\bin\Debug\net8.0\Part7.1_CustomClassAndApplyToLINQ.runtimeconfig.json
+C:\Users\Admin\Desktop\app\Part7.1_CustomClassAndApplyToLINQ\bin\Debug\net8.0\Part7.1_CustomClassAndApplyToLINQ.dll
+C:\Users\Admin\Desktop\app\Part7.1_CustomClassAndApplyToLINQ\bin\Debug\net8.0\Part7.1_CustomClassAndApplyToLINQ.pdb
+C:\Users\Admin\Desktop\app\Part7.1_CustomClassAndApplyToLINQ\obj\Debug\net8.0\Part7.1_CustomClassAndApplyToLINQ.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Desktop\app\Part7.1_CustomClassAndApplyToLINQ\obj\Debug\net8.0\Part7.1_CustomClassAndApplyToLINQ.AssemblyInfoInputs.cache
+C:\Users\Admin\Desktop\app\Part7.1_CustomClassAndApplyToLINQ\obj\Debug\net8.0\Part7.1_CustomClassAndApplyToLINQ.AssemblyInfo.cs
+C:\Users\Admin\Desktop\app\Part7.1_CustomClassAndApplyToLINQ\obj\Debug\net8.0\Part7.1_CustomClassAndApplyToLINQ.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\app\Part7.1_CustomClassAndApplyToLINQ\obj\Debug\net8.0\Part7.1_CustomClassAndApplyToLINQ.sourcelink.json
+C:\Users\Admin\Desktop\app\Part7.1_CustomClassAndApplyToLINQ\obj\Debug\net8.0\Part7.1_CustomClassAndApplyToLINQ.dll
+C:\Users\Admin\Desktop\app\Part7.1_CustomClassAndApplyToLINQ\obj\Debug\net8.0\refint\Part7.1_CustomClassAndApplyToLINQ.dll
+C:\Users\Admin\Desktop\app\Part7.1_CustomClassAndApplyToLINQ\obj\Debug\net8.0\Part7.1_CustomClassAndApplyToLINQ.pdb
+C:\Users\Admin\Desktop\app\Part7.1_CustomClassAndApplyToLINQ\obj\Debug\net8.0\Part7.1_CustomClassAndApplyToLINQ.genruntimeconfig.cache
+C:\Users\Admin\Desktop\app\Part7.1_CustomClassAndApplyToLINQ\obj\Debug\net8.0\ref\Part7.1_CustomClassAndApplyToLINQ.dll

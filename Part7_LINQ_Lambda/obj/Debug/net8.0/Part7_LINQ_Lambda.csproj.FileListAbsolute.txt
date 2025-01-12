@@ -1,0 +1,15 @@
+C:\Users\Admin\Desktop\app\Part7_LINQ_Lambda\bin\Debug\net8.0\Part7_LINQ_Lambda.exe
+C:\Users\Admin\Desktop\app\Part7_LINQ_Lambda\bin\Debug\net8.0\Part7_LINQ_Lambda.deps.json
+C:\Users\Admin\Desktop\app\Part7_LINQ_Lambda\bin\Debug\net8.0\Part7_LINQ_Lambda.runtimeconfig.json
+C:\Users\Admin\Desktop\app\Part7_LINQ_Lambda\bin\Debug\net8.0\Part7_LINQ_Lambda.dll
+C:\Users\Admin\Desktop\app\Part7_LINQ_Lambda\bin\Debug\net8.0\Part7_LINQ_Lambda.pdb
+C:\Users\Admin\Desktop\app\Part7_LINQ_Lambda\obj\Debug\net8.0\Part7_LINQ_Lambda.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Desktop\app\Part7_LINQ_Lambda\obj\Debug\net8.0\Part7_LINQ_Lambda.AssemblyInfoInputs.cache
+C:\Users\Admin\Desktop\app\Part7_LINQ_Lambda\obj\Debug\net8.0\Part7_LINQ_Lambda.AssemblyInfo.cs
+C:\Users\Admin\Desktop\app\Part7_LINQ_Lambda\obj\Debug\net8.0\Part7_LINQ_Lambda.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\app\Part7_LINQ_Lambda\obj\Debug\net8.0\Part7_LINQ_Lambda.sourcelink.json
+C:\Users\Admin\Desktop\app\Part7_LINQ_Lambda\obj\Debug\net8.0\Part7_LINQ_Lambda.dll
+C:\Users\Admin\Desktop\app\Part7_LINQ_Lambda\obj\Debug\net8.0\refint\Part7_LINQ_Lambda.dll
+C:\Users\Admin\Desktop\app\Part7_LINQ_Lambda\obj\Debug\net8.0\Part7_LINQ_Lambda.pdb
+C:\Users\Admin\Desktop\app\Part7_LINQ_Lambda\obj\Debug\net8.0\Part7_LINQ_Lambda.genruntimeconfig.cache
+C:\Users\Admin\Desktop\app\Part7_LINQ_Lambda\obj\Debug\net8.0\ref\Part7_LINQ_Lambda.dll

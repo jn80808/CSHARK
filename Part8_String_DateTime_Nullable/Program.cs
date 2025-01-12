@@ -5,12 +5,39 @@ Class : Reference Type
 */
 
 
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 
 namespace Part8
 {
     class Part8_String_DateTime_Nullable
+    
     {
+        public enum Gender
+        {
+            Male = 1,
+            Female = 2
+        }
+
+               // Enum for quarters in months
+            public enum QuarterInMonths
+            {
+                First = 3,
+                Second = 6,
+                Third = 9,
+                Fourth = 12
+            }
+
+            // Enum where values start at 5 and increment automatically
+            public enum SampleThatStartAt5
+            {
+                Usa = 5,
+                Duwa,   // This will automatically be 6
+                I,      // This will automatically be 7
+                Tulo    // This will automatically be 8
+            }
+
+
         static void Main(string[] args)
         {
 
@@ -244,10 +271,283 @@ namespace Part8
             #endregion
 
 
+            // ----------------------------------------------
+            // --- Commonly used manipulations in string ---
+            // ----------------------------------------------
+
+            #region  -- Common Checker Content Function  --
+
+
+            Console.WriteLine();
+            Console.WriteLine("************************");
+            Console.WriteLine("  -- Commonly used manipulations in string  -- ");
+            Console.WriteLine();
+            // Commonly used manipulations in string
+
+            var myString = "Joy Ng";
+
+            Console.WriteLine($"Original string: {myString}");
+
+            // Reverse the string
+            Console.WriteLine($"Reverse: {new string(myString.Reverse().ToArray())}");
+
+            // Replace part of the string
+            Console.WriteLine($"Replace: {myString.Replace("Ng", "Gonzaga")}");
+
+            // Get a substring (starting from index 1, length 5)
+            Console.WriteLine($"Substring: {myString.Substring(1, 5)}");
+
+            // Convert to lowercase
+            Console.WriteLine($"Lower case: {myString.ToLower()}");
+
+            // Convert to uppercase
+            Console.WriteLine($"Upper case: {myString.ToUpper()}");
+
+            #endregion
+
+
+            // ----------------------------------------------
+            // --- TRIM ---
+            // ----------------------------------------------
+
+            #region  -- TRIM  --
+
+
+            Console.WriteLine();
+            Console.WriteLine("************************");
+            Console.WriteLine("  -- TRIM  -- ");
+            Console.WriteLine();
+
+
+
+            var anotherString = " fra ce ";
+
+            Console.WriteLine($"Original string: '{anotherString}'");
+
+                // Trim leading spaces
+                Console.WriteLine($"Trim start: '{anotherString.TrimStart()}'");
+
+                // Trim trailing spaces
+                Console.WriteLine($"Trim end: '{anotherString.TrimEnd()}'");
+
+                // Trim both leading and trailing spaces
+                Console.WriteLine($"Trim start and end: '{anotherString.Trim()}'"); //Trim : combination of TrimStart & TrimEnd
+
+                // Trim all spaces and replace any remaining spaces within the string
+                Console.WriteLine($"Trim start and end, and replace inner spaces: '{anotherString.Trim().Replace(" ", string.Empty)}'"); // use replace para yung mga spaces daw ireplace nya lang as empty string para mawala yung space dun sa gitna  
+
+
+            #endregion
+
+
+
+            // ----------------------
+            // --- Split & Join ---
+            // ----------------------
+
+            #region  --- Split & Join ---
+
+
+            Console.WriteLine();
+            Console.WriteLine("************************");
+            Console.WriteLine("  --- Split & Join --- ");
+            Console.WriteLine();
+
+            var lastString = "frace-marteja-programmer-TV:String";
+
+            Console.WriteLine($"Original string: {lastString}");
+
+            var words = lastString.Split('-');
+
+            Console.WriteLine("=== Words ===");
+
+            foreach (var word in words)
+            {
+                Console.WriteLine(word);
+            }
+
+            // same but here inclue lang yung : 
+            var wordsWithMultipleSeparator = lastString.Split(new char[] { '-', ':' });
+
+            Console.WriteLine("=== Words with Multiple Separator and ':' ===");
+
+            foreach (var word in wordsWithMultipleSeparator)
+            {
+                Console.WriteLine(word);
+            }
+
+
+            Console.WriteLine("=== Join the with the seperator of * ===");
+
+            Console.WriteLine(string.Join("*", wordsWithMultipleSeparator));
+
+            #endregion
+
+
+            // ----------------------
+            // --- DateTime ---
+            // ----------------------
+
+            #region  --- DateTime ---
+
+
+            Console.WriteLine();
+            Console.WriteLine("************************");
+            Console.WriteLine("  --- DateTime --- ");
+            Console.WriteLine();
+
+            var now = DateTime.Now;
+            var today = DateTime.Today;
+            var timeNow = now.TimeOfDay;
+            var dateNow = now.Date;
+
+            Console.WriteLine($"Now: {now}");
+            Console.WriteLine($"Today: {today}");
+            Console.WriteLine($"Time now: {timeNow}");
+            Console.WriteLine($"Date now: {dateNow}");
+  
+
+
+            // -----------------
+            Console.WriteLine("");
+            Console.WriteLine("  --- Example 2  --- ");
+            Console.WriteLine("");
+            // -----------------
+            var myDate = new DateTime(2020, 12, 25);
+
+            Console.WriteLine($"My Date: {myDate}");
+
+            // Formatting
+            Console.WriteLine($"Formatted: {myDate:MMM dd, yyyy}");
+
+            // Computation
+            var now1 = DateTime.Now; // Define now
+
+            var yesterday = now1.AddDays(-1);
+            var tomorrow = now1.AddDays(1);
+            var days = now1.Subtract(myDate).Days;
+
+            Console.WriteLine($"Yesterday: {yesterday:MM/dd/yyyy}");
+            Console.WriteLine($"Tomorrow: {tomorrow:MM/dd/yyyy}");
+            Console.WriteLine($"Now - My Date (number of days): {days}");
+
+
+            #endregion
+
+
+            // ----------------------
+            // --- NULLABLE ---
+            // ----------------------
+
+            #region  --- NULLABLE ---
+
+
+            Console.WriteLine();
+            Console.WriteLine("************************");
+            Console.WriteLine("  --- NULLABLE --- ");
+            Console.WriteLine();
+
+            // -- way to make nullable the variable -- 
+            string myString1 = null; 
+            Nullable<int> myNumber1 = null;
+            int? secondnullableInt = null;
+
+            // "Nullable" is equivalent to "Optional". Meaning, our int variables are now optional.
+
+            // Version 1: Check if myNumber is not null
+            if (myNumber1 != null)
+            {
+                Console.WriteLine("myNumber is not null");
+            }
+            else
+            {
+                Console.WriteLine("myNumber is NULL");
+            }
+
+            secondnullableInt = 3;
+
+            // Version 2: Check if either myNumber or secondnullableInt has a value
+            if (myNumber1.HasValue || secondnullableInt.HasValue)
+            {
+                Console.WriteLine(secondnullableInt.Value);
+            };
+
+            #endregion
+
+
+
+            // ----------------------
+            // --- Enumeration ---
+            // ----------------------
+
+            #region  --- Enumeration ---
+
+            Console.WriteLine();
+            Console.WriteLine("************************");
+            Console.WriteLine("  --- Enumeration --- ");
+            Console.WriteLine();
+
+            var boyGender = Gender.Male;
+
+            Console.WriteLine($"Gender: {boyGender}, Gender value: {(int)boyGender}");
+
+            switch (boyGender)
+            {
+                case Gender.Male:
+                    Console.WriteLine("Male");
+                    break;
+
+                case Gender.Female:
+                    Console.WriteLine("Female");
+                    break;
+
+                default:
+                    Console.WriteLine("Unknown");
+                    break;
+            }
+
+            // Converting an int to the enum
+            var value = 1;
+            Gender genderFromValue = (Gender)value;
+
+            // Converting a string to the enum
+            var stringValue = "Male";
+            Gender genderFromString = (Gender)Enum.Parse(typeof(Gender), stringValue);
+
+            Console.WriteLine($"Gender from int: {genderFromValue}");
+            Console.WriteLine($"Gender from String: {genderFromString}");
+
+
+
+            // then pwede tayo mag lagay ng value sa mga enum natin as you can see sa line 23
+            Console.WriteLine();
+            Console.WriteLine("********************");
+            Console.WriteLine("  --- Enumeration Setting Value Inside of Custom Class Line 23 --- ");
+            Console.WriteLine();
+
+                    // Display the enum values
+                     Console.WriteLine("  --- enum values Months --- ");
+ 
+                    Console.WriteLine($"First Quarter: {QuarterInMonths.First}");
+                    Console.WriteLine($"Second Quarter: {QuarterInMonths.Second}");
+                    Console.WriteLine($"Third Quarter: {QuarterInMonths.Third}");
+                    Console.WriteLine($"Fourth Quarter: {QuarterInMonths.Fourth}");
+                    
+                    // Display values from the second enum
+                    Console.WriteLine();
+                    Console.WriteLine("  --- enum values random --- ");
+                    Console.WriteLine($"Usa: {SampleThatStartAt5.Usa}");
+                    Console.WriteLine($"Duwa: {SampleThatStartAt5.Duwa}");
+                    Console.WriteLine($"I: {SampleThatStartAt5.I}");
+                    Console.WriteLine($"Tulo: {SampleThatStartAt5.Tulo}");
+
+
+            #endregion
 
 
         }
         
+
     }
 }
 

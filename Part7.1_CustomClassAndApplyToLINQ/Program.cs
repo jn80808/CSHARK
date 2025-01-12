@@ -219,7 +219,7 @@ namespace App.Fruits
             // --------------------------------------------------------------------
             #region  -- CONVERTION LAMBDA ONLY Means not Available in LINQ  --
             Console.WriteLine("*********************");
-            Console.WriteLine (" -- AGREGATION THAT AVAILABLE IN LAMNDA   -- ");
+            Console.WriteLine (" -- CONVERTION THAT AVAILABLE IN LAMNDA   -- ");
             Console.WriteLine ();
 
             var numberstoConvert = Enumerable.Range(1, 10); //equivalent to {1,2,3,4,5,6,7,8,9,10} //shortcut to make 1 - 10 
@@ -234,16 +234,49 @@ namespace App.Fruits
             //Convert IEnumerable <int> to List 
             list = (from number in numberstoConvert where number >= 5 select number).ToList();
 
+            Console.WriteLine ();
             #endregion 
 
 
             // ------------------------------------------------------------------------------------
-            // ------- ELEMENT ACCESS FUNCTION OF  LAMBDA ONLY Means not Available in LINQ --------
+            // ------- BASIC ELEMENT ACCESS FUNCTION OF  LAMBDA ONLY Means not Available in LINQ --------
             // ------------------------------------------------------------------------------------
+            #region  --BASIC ELEMENT ACCESS FUNCTION OF  LAMBDA ONLY Means not Available in LINQ  --
+            Console.WriteLine("*********************");
+            Console.WriteLine (" -- BASIC ELEMENT ACCESS FUNCTION THAT AVAILABLE IN LAMNDA   -- ");
+            Console.WriteLine ();
+
+            var numbersElemet = Enumerable.Range(1, 10); // equivalent to {1,2,3,4,5,6,7,8,9,10}
+            Console.WriteLine(string.Join(",", numbersElemet)); // join the numbers with separator of ,
+
+            var firstNumber = numbersElemet.FirstOrDefault();
+            Console.WriteLine("First Number (with default): " + firstNumber);
+
+            var lastNumber = numbersElemet.LastOrDefault();
+            Console.WriteLine("Last Number (with default): " + lastNumber);
+
+            var firstEvenNumber = numbersElemet.FirstOrDefault(n => n % 2 == 0);
+            Console.WriteLine("First Even Number: " + firstEvenNumber);
+
+            var firstWithoutDefault = numbersElemet.First();
+            Console.WriteLine("First Number (without default): " + firstWithoutDefault);
+
+            var lastWithoutDefault = numbersElemet.Last();
+            Console.WriteLine("Last Number (without default): " + lastWithoutDefault);
+
+            Console.WriteLine ();
+            #endregion
 
 
+            // ------------------------------------------------------------------------------------
+            // ------- PARTITIONING OF LAMBDA ONLY Means not Available in LINQ --------
+            // ------------------------------------------------------------------------------------
+            #region  -- PARTITIONING OF LAMBDA ONLY Means not Available in LINQ  --
+            Console.WriteLine("*********************");
+            Console.WriteLine (" -- PARTITIONING OF   -- ");
+            Console.WriteLine ();
 
-
+            #endregion
 
             // -------------------------------
             // ------- Other Samples --------

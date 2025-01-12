@@ -1,0 +1,15 @@
+C:\Users\Admin\Desktop\app\Part8_String_DateTime_Nullable\bin\Debug\net8.0\Part8_String_DateTime_Nullable.exe
+C:\Users\Admin\Desktop\app\Part8_String_DateTime_Nullable\bin\Debug\net8.0\Part8_String_DateTime_Nullable.deps.json
+C:\Users\Admin\Desktop\app\Part8_String_DateTime_Nullable\bin\Debug\net8.0\Part8_String_DateTime_Nullable.runtimeconfig.json
+C:\Users\Admin\Desktop\app\Part8_String_DateTime_Nullable\bin\Debug\net8.0\Part8_String_DateTime_Nullable.dll
+C:\Users\Admin\Desktop\app\Part8_String_DateTime_Nullable\bin\Debug\net8.0\Part8_String_DateTime_Nullable.pdb
+C:\Users\Admin\Desktop\app\Part8_String_DateTime_Nullable\obj\Debug\net8.0\Part8_String_DateTime_Nullable.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Desktop\app\Part8_String_DateTime_Nullable\obj\Debug\net8.0\Part8_String_DateTime_Nullable.AssemblyInfoInputs.cache
+C:\Users\Admin\Desktop\app\Part8_String_DateTime_Nullable\obj\Debug\net8.0\Part8_String_DateTime_Nullable.AssemblyInfo.cs
+C:\Users\Admin\Desktop\app\Part8_String_DateTime_Nullable\obj\Debug\net8.0\Part8_String_DateTime_Nullable.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\app\Part8_String_DateTime_Nullable\obj\Debug\net8.0\Part8_String_DateTime_Nullable.sourcelink.json
+C:\Users\Admin\Desktop\app\Part8_String_DateTime_Nullable\obj\Debug\net8.0\Part8_String_DateTime_Nullable.dll
+C:\Users\Admin\Desktop\app\Part8_String_DateTime_Nullable\obj\Debug\net8.0\refint\Part8_String_DateTime_Nullable.dll
+C:\Users\Admin\Desktop\app\Part8_String_DateTime_Nullable\obj\Debug\net8.0\Part8_String_DateTime_Nullable.pdb
+C:\Users\Admin\Desktop\app\Part8_String_DateTime_Nullable\obj\Debug\net8.0\Part8_String_DateTime_Nullable.genruntimeconfig.cache
+C:\Users\Admin\Desktop\app\Part8_String_DateTime_Nullable\obj\Debug\net8.0\ref\Part8_String_DateTime_Nullable.dll

@@ -198,6 +198,16 @@ namespace App.Fruits
 #endregion
 
 
-/// ------- Input Expression  ------- ///
 
+
+namespace DEFAULTSAMPLE
+{
+    class DEFAULTSAMPLE_LAYOUT
+    {
+        static void Main(string[] args)
+        {
+  
+        }
+    }
+}
 

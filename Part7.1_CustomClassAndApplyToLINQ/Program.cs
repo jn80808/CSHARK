@@ -173,23 +173,74 @@ namespace App.Fruits
                 {
                     Console.WriteLine($"Grade: {groupCount.GradeC}, Count: {groupCount.StudentCount}");
                 }
-
+            Console.WriteLine ();
             #endregion -- END Grouping for LINQ and LAMBDA --
 
 
 
-            // ---------------------------------------------------------
-            // ------- LAMBDA ONLY Means not Available in LINQ --------
-            // ---------------------------------------------------------
-            #region  -- LAMBDA ONLY Means not Available in LINQ  --
+            // --------------------------------------------------------------------
+            // ------- AGREGATION LAMBDA ONLY Means not Available in LINQ --------
+            // --------------------------------------------------------------------
+            #region  -- AGREGATION LAMBDA ONLY Means not Available in LINQ  --
+            Console.WriteLine("*********************");
+            Console.WriteLine (" -- AGREGATION THAT AVAILABLE IN LAMNDA   -- ");
+            Console.WriteLine ();
 
+            var numbers = Enumerable.Range(1, 10); //equivalent to {1,2,3,4,5,6,7,8,9,10} //shortcut to make 1 - 10 
+            Console.WriteLine(string.Join(",", numbers )); //join the numbers with seperator of , 
 
+            //Average 
+            Console.WriteLine ();
+            Console.WriteLine (" -- average  num1To5Average  -- ");
+            var average = numbers.Average();
+            var num1To5Average = numbers.Where (n => n <= 5 ).Average();
+            Console.WriteLine($"Average: {average}, Average 1 to 5: {num1To5Average}");
 
+            //Count or long Count, use Long Count when expected count is more that int capacity 
+            var count = numbers.Count();
 
+            //Max and Mix 
+            var maxNumber = numbers.Max();
+            var minNumber = numbers.Min();
 
+            //Sum 
+            var summation = numbers.Sum();
+
+            Console.WriteLine ();
+            Console.WriteLine (" -- Count  Max  MIN  SUM  -- ");
+            Console.WriteLine($"Count:{count}, Max: {maxNumber}, Min: {minNumber}, Sum: {summation}");
 
 
             #endregion --LAMNDA ONLY
+
+
+            // --------------------------------------------------------------------
+            // ------- CONVERTION LAMBDA ONLY Means not Available in LINQ --------
+            // --------------------------------------------------------------------
+            #region  -- CONVERTION LAMBDA ONLY Means not Available in LINQ  --
+            Console.WriteLine("*********************");
+            Console.WriteLine (" -- AGREGATION THAT AVAILABLE IN LAMNDA   -- ");
+            Console.WriteLine ();
+
+            var numberstoConvert = Enumerable.Range(1, 10); //equivalent to {1,2,3,4,5,6,7,8,9,10} //shortcut to make 1 - 10 
+            Console.WriteLine(string.Join(",", numberstoConvert )); //join the numbers with seperator of ,
+
+            var list = new List<int> (numberstoConvert); // dito naka list ab int tayo tas yung sa line 232 is naka IEnumerable <int> so to fixxed the error need natin iconvert to list 
+            var enumValue = list.AsEnumerable(); //converted to enumerable 
+            var backToList = enumValue.ToList(); //converted back to list 
+
+            //list = (from number in numberstoConvert where number >= 5 select number); //as per discussion yung LINQ and LAMBDA is always IEnumerable line IEnumerable<int> , IEnumerable <string> , IEnumerable <strongly type > and so on 
+
+            //Convert IEnumerable <int> to List 
+            list = (from number in numberstoConvert where number >= 5 select number).ToList();
+
+            #endregion 
+
+
+            // ------------------------------------------------------------------------------------
+            // ------- ELEMENT ACCESS FUNCTION OF  LAMBDA ONLY Means not Available in LINQ --------
+            // ------------------------------------------------------------------------------------
+
 
 
 

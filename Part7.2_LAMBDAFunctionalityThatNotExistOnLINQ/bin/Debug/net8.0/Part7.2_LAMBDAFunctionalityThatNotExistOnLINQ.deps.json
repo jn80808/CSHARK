@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "Part7.2_LAMBDAFunctionalityThatNotExistOnLINQ/1.0.0": {
+        "runtime": {
+          "Part7.2_LAMBDAFunctionalityThatNotExistOnLINQ.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Part7.2_LAMBDAFunctionalityThatNotExistOnLINQ/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

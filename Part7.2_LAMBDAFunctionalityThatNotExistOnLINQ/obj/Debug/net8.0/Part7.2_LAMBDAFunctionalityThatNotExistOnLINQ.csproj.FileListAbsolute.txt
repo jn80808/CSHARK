@@ -1,0 +1,15 @@
+C:\Users\Admin\Desktop\app\Part7.2_LAMBDAFunctionalityThatNotExistOnLINQ\bin\Debug\net8.0\Part7.2_LAMBDAFunctionalityThatNotExistOnLINQ.exe
+C:\Users\Admin\Desktop\app\Part7.2_LAMBDAFunctionalityThatNotExistOnLINQ\bin\Debug\net8.0\Part7.2_LAMBDAFunctionalityThatNotExistOnLINQ.deps.json
+C:\Users\Admin\Desktop\app\Part7.2_LAMBDAFunctionalityThatNotExistOnLINQ\bin\Debug\net8.0\Part7.2_LAMBDAFunctionalityThatNotExistOnLINQ.runtimeconfig.json
+C:\Users\Admin\Desktop\app\Part7.2_LAMBDAFunctionalityThatNotExistOnLINQ\bin\Debug\net8.0\Part7.2_LAMBDAFunctionalityThatNotExistOnLINQ.dll
+C:\Users\Admin\Desktop\app\Part7.2_LAMBDAFunctionalityThatNotExistOnLINQ\bin\Debug\net8.0\Part7.2_LAMBDAFunctionalityThatNotExistOnLINQ.pdb
+C:\Users\Admin\Desktop\app\Part7.2_LAMBDAFunctionalityThatNotExistOnLINQ\obj\Debug\net8.0\Part7.2_LAMBDAFunctionalityThatNotExistOnLINQ.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Desktop\app\Part7.2_LAMBDAFunctionalityThatNotExistOnLINQ\obj\Debug\net8.0\Part7.2_LAMBDAFunctionalityThatNotExistOnLINQ.AssemblyInfoInputs.cache
+C:\Users\Admin\Desktop\app\Part7.2_LAMBDAFunctionalityThatNotExistOnLINQ\obj\Debug\net8.0\Part7.2_LAMBDAFunctionalityThatNotExistOnLINQ.AssemblyInfo.cs
+C:\Users\Admin\Desktop\app\Part7.2_LAMBDAFunctionalityThatNotExistOnLINQ\obj\Debug\net8.0\Part7.2_LAMBDAFunctionalityThatNotExistOnLINQ.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\app\Part7.2_LAMBDAFunctionalityThatNotExistOnLINQ\obj\Debug\net8.0\Part7.2_LAMBDAFunctionalityThatNotExistOnLINQ.sourcelink.json
+C:\Users\Admin\Desktop\app\Part7.2_LAMBDAFunctionalityThatNotExistOnLINQ\obj\Debug\net8.0\Part7.2_LAMBDAFunctionalityThatNotExistOnLINQ.dll
+C:\Users\Admin\Desktop\app\Part7.2_LAMBDAFunctionalityThatNotExistOnLINQ\obj\Debug\net8.0\refint\Part7.2_LAMBDAFunctionalityThatNotExistOnLINQ.dll
+C:\Users\Admin\Desktop\app\Part7.2_LAMBDAFunctionalityThatNotExistOnLINQ\obj\Debug\net8.0\Part7.2_LAMBDAFunctionalityThatNotExistOnLINQ.pdb
+C:\Users\Admin\Desktop\app\Part7.2_LAMBDAFunctionalityThatNotExistOnLINQ\obj\Debug\net8.0\Part7.2_LAMBDAFunctionalityThatNotExistOnLINQ.genruntimeconfig.cache
+C:\Users\Admin\Desktop\app\Part7.2_LAMBDAFunctionalityThatNotExistOnLINQ\obj\Debug\net8.0\ref\Part7.2_LAMBDAFunctionalityThatNotExistOnLINQ.dll

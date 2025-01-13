@@ -9,6 +9,10 @@ namespace Part10_Class_Struct_Delegate
   
             
             /*
+                -------------
+                -- @CLASS --
+                -------------
+
                 Class is reference type 
                 >> as per last topic we see the difference of value type and reference type and kung pano to sinisave sa ram natin or memory natin 
                 >> Class is like a blueprint of specific object , is like a layout ng data natin pano nya i-sasave sa memory natin 
@@ -24,7 +28,65 @@ namespace Part10_Class_Struct_Delegate
                         -- methods/function -- 
                         -- events -- 
                     }
-                    
+
+                    <access modifier> : Public , Private , Internal 
+                    Class : Default 
+                    <identifier/name> : Class Name or Custom Name 
+
+                ---------------
+                -- @STRUCT  --
+                ---------------
+
+                Class vs Struct 
+                class : Reference Type 
+                Struct : Valuer Type 
+
+                >> Struct is Value Type 
+                >> Struct is like a BluePrint of Specific Object.
+                >> same sa class gingroup nya din yung class nya 
+                >> Struct enables you to create your custom Types by grouping variables of other types, method , and events 
+                
+                Syntax: 
+                    <acess modifier> struct <identifier/name>{
+                        -- Fields --
+                        -- constructors --
+                        -- properties --
+                        -- methods/function -- 
+                        -- events -- 
+                    }
+
+                    <access modifier> : Public , Private , Internal , abstract , sealed 
+                    struct : Default 
+                    <identifier/name> : Class Name or Custom Name 
+
+                    Abstract and Sealed : will be discuss OOP 
+
+
+
+                -----------------
+                -- @DELEGATE  --
+                -----------------
+                
+                >> Delegate is a reference type 
+                >> Delegate is a data type that represents references to methods with a particular parameter list return type 
+                >> Delegate is data type and yung Value nya is Mehod or Fucntion means yung iassigned nyang values is may return type din  and may block of codes and pwede din mag karon ng parameters list 
+                >> Delegate is katumbas ng Pointers to Function sa C and C++
+                >> Mas madali syang intindihin pag may background sa C and C++
+                >> Delegate is pwede natin gamitin sa argument or parameter sa methods 
+                >> Delegate are used to pass methods as arguments to other methods 
+                >> and since Delegate ibigsabihin yung methods na tinatawag natin is papasahan din natin ng method na parameter value 
+                
+                Syntax :
+                <access modifier> delegate <return type> <identifier/name>(<parameters>)
+
+
+                    <access modifier> : Public , Private , Internal , abstract , sealed 
+                    delegate : Default 
+                    <return type> : data type
+                    <identifier/name> : Class Name or Custom Name 
+                    (<parameters>) : as needed 
+
+                >> as we can wala syang block of code compare sa class and function 
 
             */
 

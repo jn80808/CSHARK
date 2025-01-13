@@ -148,11 +148,44 @@ namespace Part10_Class_Struct_Delegate
 
             // -------- 2nd Method  --------
             // Method to update both Sample and NickName properties
-            public void Update(int sample, string nickName)
+
+            // -- without Event Invoke --
+            public void UpdatewithOutEventInvoke(int sample, string nickName)
             {
                 Update(sample); // Call the other Update method to set Sample
                 NickName = nickName;
             }
+            
+            // -- with Event Invoke --
+            /*
+                NickNameHandler? : call lang yung eveny Handler natin 
+                .Invoke : gagamit lang tayo ng invoke na fucntion and we have 2 parameters in Invoke 
+                1st Parameter : this is para sa center kung sino yung nag invoke ng function na to so yung nag invoke nito yung instance natin na class ginamit natin yung this na keywords  
+                2nd Parameter : new NickNameArgs { NickName = nickName} yung parameter ni NickNameArgs which is yung NickName is nilagay natin yung nickName na value , nickName : parameter dito sa update natin ,  NickName : is yung nasa get set natin 
+
+                >> ibigsabihin lang nito manonotify sila kung sino yung nag invoke tas makukuha din nila yung value nong nickName kasi ito yung marerecieved nila yung sender and nickNameARGES 
+                >> Sender : this 
+                >> NickNameArgs 
+
+                >> ?. : is called as member access operator means is pag di null yung NickNameHandler Execute nya yung Invoke pag wala naman wala syang gagawin
+                >> yung equivalent nya is 
+                                            if(NickNameHandler != null){
+                                                NickNameHandler.Invoke()
+                                                }
+                >> ?. : is shortcut lang to instead gumawa pa tayo ng if condition 
+                
+
+
+            */
+            public void UpdateWithEventInvoke(int sample, string nickName)
+            {
+                Update(sample); 
+                NickName = nickName;
+                NickNameHandler?.Invoke(this, new NickNameArgs { NickName = nickName});
+            }
+
+
+
 
             // -------- 3rd Method  --------
             public DateTime? BirthDate { get; set; }
@@ -172,6 +205,46 @@ namespace Part10_Class_Struct_Delegate
 
 
             #endregion
+
+
+
+            #region  -- Events --
+
+            /*
+                >> NickNameHandler : nag desclare lang tayo ng event  NickName 
+                >> syntax for event :
+                                     <access specifier>  : public 
+                                     event EventHandler  : Default na may event EventHandler
+                                     <class> : <NickNameArgs> yung nandun sa baba yung public class NickNameArgs declare lang yung class 
+                                                    : declare to para yung event natin is may content or argument na NicknameArgs 
+                                      EventName : NickNameHandler  ito yung name nong event natin   
+                
+                >> yung purpose ng event is para inotify yung mag susubscribe sa eventHandler natin 
+                >> Example dito sa NickNameHandler yung mga class and module na mag susubscribe dito is automatic na manonotify sila everytime mag eenvoke tayo sa NickNameHandler 
+                >> so ienvoke na natin yung NickNameHandler sa update function natin para everytime na i-chachange natin yung nickname manonotify yung mga nag subscribe sa NickNameHandler
+
+
+            */
+            public event EventHandler <NickNameArgs> NickNameHandler; 
+
+            
+
+            /* 
+                >> class : NickNameArgs 
+                >> EventArgs is nakainherit ito yung class na gagamit for the event 
+                >> and then may properties lang syang NickName 
+
+            */
+            public class NickNameArgs : EventArgs{
+                public string NickName { get; set; }
+            }
+
+
+            #endregion
+
+
+
+
 
 
     }

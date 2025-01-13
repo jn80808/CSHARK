@@ -1,5 +1,8 @@
 ﻿
 
+using System.Runtime.CompilerServices;
+using static Part10_Class_Struct_Delegate.Person;
+
 namespace Part10_Class_Struct_Delegate
 {
     class Class_Struct_Delegate
@@ -161,6 +164,14 @@ namespace Part10_Class_Struct_Delegate
             
 
             #region  --  Method of Class -- 
+
+            
+            Console.WriteLine();
+            Console.WriteLine("********* --   Method of Class --  *********");
+            Console.WriteLine(" -- Update WithOut EventInvoke  -- ");
+            Console.WriteLine();
+
+
             // Create a new person instance
             var person = new Person("Joy", "NG")
             {
@@ -169,7 +180,8 @@ namespace Part10_Class_Struct_Delegate
             };
 
             // Update Sample and NickName
-            person.Update(10, "Ace");
+            person.UpdatewithOutEventInvoke(10, "Ace");// UpdatewithOutEventInvoke(int sample, string nickName) so na momodify dito yung NickName 
+
 
             // Output the details
             Console.WriteLine($@"
@@ -182,19 +194,66 @@ namespace Part10_Class_Struct_Delegate
             #endregion
 
 
-
-
             #region  -- Events --
 
+            /*
+            So yung naging flow dito is 
+            1st : is mag susubscribe mo na sya 
+            2nd : is yung function na update natin mag rurun yung block of code natin sa loob and ipapasa sa loob yung mga nakuha value which is sample = 10 and NickName = Ace 
+            3rd : is yung pinaka last na block of code sa update is yung NickNameHandler which is lahat nong mga naka subscribe is makakarecived ng values nato yung nasa parameter (this, new NickName ) , this: Person Object , NickName is Ace yung code na to papasok na sa NickNameChanging Function kasi ito yung method na tinatawag natin pag nakakarecieved tayo ng subscription and kung ano yung mga nakalagay na statement or line of code or block of code execute nya lang 
 
+            */
 
+            Console.WriteLine();
+            Console.WriteLine("********* --   Events --  *********");
+            Console.WriteLine(" -- Update With EventInvoke  -- ");
+            Console.WriteLine();
 
+            // Create a new person instance
+            var person1 = new Person("Joy", "NG")
+            {
+                NickName = "Pretty Joy",
+                BirthDate = new DateTime(1998, 6, 16) // YYYY/MM/DD
+            };
+            // -------- 1st Step : Line 201   --------
+            person1.NickNameHandler += NickNameChanging; // += for subscribe event, -= for unsubcribe event, then method name 
+
+            // -------- 2nd Step : Line 202   --------
+            // Update Sample and NickName
+            person1.UpdateWithEventInvoke(10, "Ace"); // UpdatewithOutEventInvoke(int sample, string nickName) so na momodify dito yung NickName 
+            
+            //nag lagay lang ako dito to compare the output : the difference is pag after to nilagat sa update is walang output na compare pag before update sa taas may NickName is changing to: Ace
+            //person1.NickNameHandler += NickNameChanging; // += for subscribe event, -= for unsubcribe event, then method name 
+
+            
+            // Output the details
+                Console.WriteLine($@"
+                    Name: {person1.FullName}
+                    Age: {person1.GetAge()}
+                    Nickname: {person1.NickName}
+                    SampleInt: {person1.Sample}");
             #endregion
 
 
 
 
-
+        }
+            // -------- 3nd Step : Line 203   --------
+        // Add new Function for : Event handler for NickNameChanging
+        /*
+        <access specifier> : private static void 
+        <Function Name> : NickNameChanging
+        2Parameter :
+                    1st Param : 
+                     Parameter Name : sender 
+                     Data Type : Object 
+                     2nd  Param : 
+                     Parameter Name : args
+                     Data Type : NickNameArgs means dito papasok yung notification natin 
+        */
+        private static void NickNameChanging(object? sender, NickNameArgs args)
+        {
+             Console.WriteLine($"NickName is changing to: {args.NickName}"); //piniprint lang yung value nong NickNameArgs property sa na parameter 
         }
     }
 }

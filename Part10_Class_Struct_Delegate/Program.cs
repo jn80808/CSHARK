@@ -4,6 +4,7 @@ using System.Drawing;
 using System.Runtime.CompilerServices;
 using static Part10_Class_Struct_Delegate.Fruit_Struct;
 using static Part10_Class_Struct_Delegate.Person;
+using  static  Part10_Class_Struct_Delegate.Fruit_Delegate;
 
 namespace Part10_Class_Struct_Delegate
 {
@@ -167,101 +168,144 @@ namespace Part10_Class_Struct_Delegate
 
             #region  --  Method of Class -- 
 
-            
-            Console.WriteLine();
-            Console.WriteLine("********* --   Method of Class --  *********");
-            Console.WriteLine(" -- Update WithOut EventInvoke  -- ");
-            Console.WriteLine();
+                
+                Console.WriteLine();
+                Console.WriteLine("********* --   Method of Class --  *********");
+                Console.WriteLine(" -- Update WithOut EventInvoke  -- ");
+                Console.WriteLine();
 
 
-            // Create a new person instance
-            var person = new Person("Joy", "NG")
-            {
-                NickName = "Pretty Joy",
-                BirthDate = new DateTime(1998, 6, 16) // YYYY/MM/DD
-            };
+                // Create a new person instance
+                var person = new Person("Joy", "NG")
+                {
+                    NickName = "Pretty Joy",
+                    BirthDate = new DateTime(1998, 6, 16) // YYYY/MM/DD
+                };
 
-            // Update Sample and NickName
-            person.UpdatewithOutEventInvoke(10, "Ace");// UpdatewithOutEventInvoke(int sample, string nickName) so na momodify dito yung NickName 
+                // Update Sample and NickName
+                person.UpdatewithOutEventInvoke(10, "Ace");// UpdatewithOutEventInvoke(int sample, string nickName) so na momodify dito yung NickName 
 
 
-            // Output the details
-            Console.WriteLine($@"
-                                Name: {person.FullName}
-                                Age: {person.GetAge()}
-                                Nickname: {person.NickName}
-                                SampleInt: {person.Sample}"
-                            );
+                // Output the details
+                Console.WriteLine($@"
+                                    Name: {person.FullName}
+                                    Age: {person.GetAge()}
+                                    Nickname: {person.NickName}
+                                    SampleInt: {person.Sample}"
+                                );
 
             #endregion
 
 
             #region  -- Events --
 
-            /*
-            So yung naging flow dito is 
-            1st : is mag susubscribe mo na sya 
-            2nd : is yung function na update natin mag rurun yung block of code natin sa loob and ipapasa sa loob yung mga nakuha value which is sample = 10 and NickName = Ace 
-            3rd : is yung pinaka last na block of code sa update is yung NickNameHandler which is lahat nong mga naka subscribe is makakarecived ng values nato yung nasa parameter (this, new NickName ) , this: Person Object , NickName is Ace yung code na to papasok na sa NickNameChanging Function kasi ito yung method na tinatawag natin pag nakakarecieved tayo ng subscription and kung ano yung mga nakalagay na statement or line of code or block of code execute nya lang 
+                /*
+                So yung naging flow dito is 
+                1st : is mag susubscribe mo na sya 
+                2nd : is yung function na update natin mag rurun yung block of code natin sa loob and ipapasa sa loob yung mga nakuha value which is sample = 10 and NickName = Ace 
+                3rd : is yung pinaka last na block of code sa update is yung NickNameHandler which is lahat nong mga naka subscribe is makakarecived ng values nato yung nasa parameter (this, new NickName ) , this: Person Object , NickName is Ace yung code na to papasok na sa NickNameChanging Function kasi ito yung method na tinatawag natin pag nakakarecieved tayo ng subscription and kung ano yung mga nakalagay na statement or line of code or block of code execute nya lang 
 
-            */
+                */
 
-            Console.WriteLine();
-            Console.WriteLine("********* --   Events --  *********");
-            Console.WriteLine(" -- Update With EventInvoke  -- ");
-            Console.WriteLine();
+                Console.WriteLine();
+                Console.WriteLine("********* --   Events --  *********");
+                Console.WriteLine(" -- Update With EventInvoke  -- ");
+                Console.WriteLine();
 
-            // Create a new person instance
-            var person1 = new Person("Joy", "NG")
-            {
-                NickName = "Pretty Joy",
-                BirthDate = new DateTime(1998, 6, 16) // YYYY/MM/DD
-            };
-            // -------- 1st Step : Line 201   --------
-            person1.NickNameHandler += NickNameChanging; // += for subscribe event, -= for unsubcribe event, then method name 
+                // Create a new person instance
+                var person1 = new Person("Joy", "NG")
+                {
+                    NickName = "Pretty Joy",
+                    BirthDate = new DateTime(1998, 6, 16) // YYYY/MM/DD
+                };
+                // -------- 1st Step : Line 201   --------
+                person1.NickNameHandler += NickNameChanging; // += for subscribe event, -= for unsubcribe event, then method name 
 
-            // -------- 2nd Step : Line 202   --------
-            // Update Sample and NickName
-            person1.UpdateWithEventInvoke(10, "Ace"); // UpdatewithOutEventInvoke(int sample, string nickName) so na momodify dito yung NickName 
-            
-            //nag lagay lang ako dito to compare the output : the difference is pag after to nilagat sa update is walang output na compare pag before update sa taas may NickName is changing to: Ace
-            //person1.NickNameHandler += NickNameChanging; // += for subscribe event, -= for unsubcribe event, then method name 
+                // -------- 2nd Step : Line 202   --------
+                // Update Sample and NickName
+                person1.UpdateWithEventInvoke(10, "Ace"); // UpdatewithOutEventInvoke(int sample, string nickName) so na momodify dito yung NickName 
+                
+                //nag lagay lang ako dito to compare the output : the difference is pag after to nilagat sa update is walang output na compare pag before update sa taas may NickName is changing to: Ace
+                //person1.NickNameHandler += NickNameChanging; // += for subscribe event, -= for unsubcribe event, then method name 
 
-            
-            // Output the details
-                Console.WriteLine($@"
-                    Name: {person1.FullName}
-                    Age: {person1.GetAge()}
-                    Nickname: {person1.NickName}
-                    SampleInt: {person1.Sample}");
+                
+                // Output the details
+                    Console.WriteLine($@"
+                        Name: {person1.FullName}
+                        Age: {person1.GetAge()}
+                        Nickname: {person1.NickName}
+                        SampleInt: {person1.Sample}");
             #endregion
 
 
-          #region  -- Struct --
+            #region  -- Struct --
 
-            Console.WriteLine();
-            Console.WriteLine("********* -- Struct --  *********");
-            Console.WriteLine(" -- struct Example  -- ");
-            Console.WriteLine();
+                Console.WriteLine();
+                Console.WriteLine("********* -- Struct --  *********");
+                Console.WriteLine(" -- struct Example  -- ");
+                Console.WriteLine();
 
-            var apple = new Fruits() { Name ="Apple" , Color = "Red" };
-            var mango = new Fruits() { Name ="Mango" , Color = "Yellow" };
+                var apple = new Fruits() { Name ="Apple" , Color = "Red" };
+                var mango = new Fruits() { Name ="Mango" , Color = "Yellow" };
 
-            Console.WriteLine( $"Fruits: {apple.Name}");
-            Console.WriteLine( $"Fruits: {mango.Name}");
-            
-            Console.WriteLine( $"Fruits: {apple.Color}");
-            Console.WriteLine( $"Fruits: {mango.Color}");
+                Console.WriteLine( $"Fruits: {apple.Name}");
+                Console.WriteLine( $"Fruits: {mango.Name}");
+                
+                Console.WriteLine( $"Fruits: {apple.Color}");
+                Console.WriteLine( $"Fruits: {mango.Color}");
 
-        #endregion
+            #endregion
 
 
+            #region  -- Delegate --
 
+                Console.WriteLine();
+                Console.WriteLine("*********  -- Delegate --  *********");
+                Console.WriteLine(" -- Delegate Example  -- ");
+                Console.WriteLine();
+
+
+                // var luffy = new Person("Luffy", "Monkey") //FName , LName
+                // {
+                //     NickName = "Strawhat"
+                // };
+
+
+                // // Add favorite fruits
+                // luffy.FavoriteFruits.Add(new Fruits("Banana", "Yellow")); // FavoriteFruits
+                // luffy.AddFavoriteFruit(new Fruits("Mango", "Yellow"), AddedNewFruit);
+
+                
+
+                // Delete a favorite fruit
+                // luffy.DeleteFavoriteFruit(luffy.FavoriteFruits[0], (fruit) =>
+                // {
+                //     Console.WriteLine($"Deleted Fruit: {fruit.Name}");
+                //     return 1;
+                // });
+
+                // // Output the details
+                // Console.WriteLine($"-- {luffy.FullName} - Favorite Fruits --");
+                // foreach (var fruit in luffy.FavoriteFruits)
+                // {
+                //     Console.WriteLine($"-> {fruit.Name}");
+                // }
+
+
+                
+
+            #endregion
 
         }
 
-
-
+        // -------- Use in Deligates   --------
+        // Callback method for when a fruit is added
+        //this is the signature of the method       public delegate int ProcessFruitDelegate (Fruit_Struct fruit);
+        private static int AddedNewFruit(Fruit_Struct prutas)
+        {
+            Console.WriteLine($"Added fruit: {prutas.Name}");
+            return 1;
+        }
 
 
         // -------- Use in Events   --------

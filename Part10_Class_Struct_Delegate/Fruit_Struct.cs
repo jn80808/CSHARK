@@ -7,7 +7,8 @@ namespace Part10_Class_Struct_Delegate
 {
     public struct Fruit_Struct
     {
-        
+        public object Name { get; internal set; }
+
         /* 
             >> rigth click and click struct 
             >> struct is kung ano yung ginagawa natin before sa Custom Class is same lang dito 

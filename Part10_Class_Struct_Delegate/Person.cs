@@ -187,45 +187,53 @@ namespace Part10_Class_Struct_Delegate
 
 
 
-            // -------- 3rd Method  --------
-            public DateTime? BirthDate { get; set; }
-
-            public int? GetAge()
-            {
-                if (BirthDate.HasValue)// checling if yung BirthDate is have a value 
-                {
-                    // Calculate the age in years
-                    // yung result nito is double since TotalDays data type is double so sa unahan may casting tayo  (int?) since yung ineexpect ng class natin in integer public int? GetAge()
-                    return (int?)((DateTime.Now - BirthDate.Value).TotalDays / 365.25); 
-                }
-
-                // Return null if BirthDate is not set
-                return default; // so incase walang value return nya default which yung value nito is null 
-            }
+                // -------- 3rd Method  --------
+                public DateTime? BirthDate { get; set; }
 
 
-            #endregion
+                //public object FavoriteFruits { get; internal set; } //from this to update sa baba aksi nag eeror ako sa delegate 
+
+                public List<Fruit_Struct.Fruits> FavoriteFruits { get; set; } = new List<Fruit_Struct.Fruits>();
+
+
+                public int? GetAge()
+                    {
+                        if (BirthDate.HasValue)// checling if yung BirthDate is have a value 
+                        {
+                            // Calculate the age in years
+                            // yung result nito is double since TotalDays data type is double so sa unahan may casting tayo  (int?) since yung ineexpect ng class natin in integer public int? GetAge()
+                            return (int?)((DateTime.Now - BirthDate.Value).TotalDays / 365.25); 
+                        }
+
+                        // Return null if BirthDate is not set
+                        return default; // so incase walang value return nya default which yung value nito is null 
+                    }
 
 
 
-            #region  -- Events --
 
-            /*
-                >> NickNameHandler : nag desclare lang tayo ng event  NickName 
-                >> syntax for event :
-                                     <access specifier>  : public 
-                                     event EventHandler  : Default na may event EventHandler
-                                     <class> : <NickNameArgs> yung nandun sa baba yung public class NickNameArgs declare lang yung class 
-                                                    : declare to para yung event natin is may content or argument na NicknameArgs 
-                                      EventName : NickNameHandler  ito yung name nong event natin   
-                
-                >> yung purpose ng event is para inotify yung mag susubscribe sa eventHandler natin 
-                >> Example dito sa NickNameHandler yung mga class and module na mag susubscribe dito is automatic na manonotify sila everytime mag eenvoke tayo sa NickNameHandler 
-                >> so ienvoke na natin yung NickNameHandler sa update function natin para everytime na i-chachange natin yung nickname manonotify yung mga nag subscribe sa NickNameHandler
+        #endregion
 
 
-            */
-            public event EventHandler <NickNameArgs> NickNameHandler; 
+
+        #region  -- Events --
+
+        /*
+            >> NickNameHandler : nag desclare lang tayo ng event  NickName 
+            >> syntax for event :
+                                 <access specifier>  : public 
+                                 event EventHandler  : Default na may event EventHandler
+                                 <class> : <NickNameArgs> yung nandun sa baba yung public class NickNameArgs declare lang yung class 
+                                                : declare to para yung event natin is may content or argument na NicknameArgs 
+                                  EventName : NickNameHandler  ito yung name nong event natin   
+
+            >> yung purpose ng event is para inotify yung mag susubscribe sa eventHandler natin 
+            >> Example dito sa NickNameHandler yung mga class and module na mag susubscribe dito is automatic na manonotify sila everytime mag eenvoke tayo sa NickNameHandler 
+            >> so ienvoke na natin yung NickNameHandler sa update function natin para everytime na i-chachange natin yung nickname manonotify yung mga nag subscribe sa NickNameHandler
+
+
+        */
+        public event EventHandler <NickNameArgs> NickNameHandler; 
 
             
 

@@ -36,6 +36,14 @@ namespace Part10_Class_Struct_Delegate
                     sa line 25 yung return type dun sa int and may 1 parameter sya na fruit and yung data type nya is Fruit_Struct 
                 >> as we can see dun sa loob ng block code natin is inovoke natin yung successCallback and  may parameter which is ito yung parameter natin sa  ProcessFruitDelegate (Fruit_Struct fruit); 
 
+
+                >> Delegate is like event lang kasi yung EventHandler is mga delegate lang din yun and if ayaw natin gamitin yung EventHandler pag gumagawa tayo ng Event pwede natin gamitin yung Custom Delegate na ginamit natin  
+
+                >> Event Use in the Scenario : 1. Something Happend 2. Something will Happen 3. Something is Happening 
+                >> Delegate Use in the Scenario : 1. Full Back or Execute Something 
+
+
+                >> 
             */
             public void AddFavoriteFruit(Fruit_Struct fruit, ProcessFruitDelegate successCallback) 
             {

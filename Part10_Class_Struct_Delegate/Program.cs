@@ -134,12 +134,25 @@ namespace Part10_Class_Struct_Delegate
             >> 3rd row nag initialize sya ng Bautista for the LastName Variable 
 
             >> same kay pedro same lang pero mas magandang approach yung kay pedro kesa kay juan kay old approach pa yun 
-            
+
 
             */
 
 
             #endregion
+
+
+            /*
+            Create Class Person 
+                -  Add fields , constructor and properties
+                -  Use Peson in Program.cs line 102 -140 
+
+            >> back again sa Person na Class : so far complete na yung fields , constructor and properties here  
+
+            
+            */
+            
+
 
         }
     }

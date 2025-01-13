@@ -1,6 +1,8 @@
 ﻿
 
+using System.Drawing;
 using System.Runtime.CompilerServices;
+using static Part10_Class_Struct_Delegate.Fruit_Struct;
 using static Part10_Class_Struct_Delegate.Person;
 
 namespace Part10_Class_Struct_Delegate
@@ -235,10 +237,35 @@ namespace Part10_Class_Struct_Delegate
             #endregion
 
 
+          #region  -- Struct --
+
+            Console.WriteLine();
+            Console.WriteLine("********* -- Struct --  *********");
+            Console.WriteLine(" -- struct Example  -- ");
+            Console.WriteLine();
+
+            var apple = new Fruits() { Name ="Apple" , Color = "Red" };
+            var mango = new Fruits() { Name ="Mango" , Color = "Yellow" };
+
+            Console.WriteLine( $"Fruits: {apple.Name}");
+            Console.WriteLine( $"Fruits: {mango.Name}");
+            
+            Console.WriteLine( $"Fruits: {apple.Color}");
+            Console.WriteLine( $"Fruits: {mango.Color}");
+
+        #endregion
+
+
 
 
         }
-            // -------- 3nd Step : Line 203   --------
+
+
+
+
+
+        // -------- Use in Events   --------
+        // -------- 3nd Step : Line 203   --------
         // Add new Function for : Event handler for NickNameChanging
         /*
         <access specifier> : private static void 
@@ -255,5 +282,10 @@ namespace Part10_Class_Struct_Delegate
         {
              Console.WriteLine($"NickName is changing to: {args.NickName}"); //piniprint lang yung value nong NickNameArgs property sa na parameter 
         }
+
+
+
+
+
     }
 }

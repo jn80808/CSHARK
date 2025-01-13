@@ -91,7 +91,55 @@ namespace Part10_Class_Struct_Delegate
             */
 
 
+                    Console.WriteLine();
+                    Console.WriteLine("********* --  Part 10 --  *********");
+                    Console.WriteLine(" -- main  -- ");
+                    Console.WriteLine();
 
+
+            //Application of what we did 
+
+            #region - Not using a class
+            //we use this since small data lang sya  pero what is madaming data sya like 1000 people so isa isa yan gagawan ng variable so mahirapan to solve this problem what we do is gumanit ng class as shown sa baba 
+
+                //Juan 
+                string firstNameJuan;
+                string lastNameJuan;
+
+                //pedro 
+                string firstNamePedro;
+                string lastNamePedro;
+
+            #endregion
+
+
+            #region - Using a class --
+
+                // Juan : is like our grouping here and yung FirstName & LastName is variable natin  
+                var juan = new Person(); //to Intantiate the class para magamit nalng yung loob ng class gagamit lang tayo na word na new , as () default constructor na empty yung ginamit natin as we can see din yung sa class Person walang lamab yung constructor 
+                juan.FirstName = "Juan";
+                juan.LastName = "Bautista";
+
+                var pedro = new Person()
+                {
+                    FirstName = "Pedro",
+                    LastName = "Ewan"
+                };
+
+            /*
+            -- so how Initialization Happened -- 
+
+            >> 1st row nag initialize sya ng Juan 
+            >> 2nd row nag initialize sya ng Juan for the FirstName Variable 
+            >> 3rd row nag initialize sya ng Bautista for the LastName Variable 
+
+            >> same kay pedro same lang pero mas magandang approach yung kay pedro kesa kay juan kay old approach pa yun 
+            
+
+            */
+
+
+            #endregion
 
         }
     }

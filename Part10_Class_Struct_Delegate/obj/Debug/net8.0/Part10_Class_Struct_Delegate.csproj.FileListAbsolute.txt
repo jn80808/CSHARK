@@ -1,0 +1,15 @@
+C:\Users\Admin\Desktop\app\Part10_Class_Struct_Delegate\bin\Debug\net8.0\Part10_Class_Struct_Delegate.exe
+C:\Users\Admin\Desktop\app\Part10_Class_Struct_Delegate\bin\Debug\net8.0\Part10_Class_Struct_Delegate.deps.json
+C:\Users\Admin\Desktop\app\Part10_Class_Struct_Delegate\bin\Debug\net8.0\Part10_Class_Struct_Delegate.runtimeconfig.json
+C:\Users\Admin\Desktop\app\Part10_Class_Struct_Delegate\bin\Debug\net8.0\Part10_Class_Struct_Delegate.dll
+C:\Users\Admin\Desktop\app\Part10_Class_Struct_Delegate\bin\Debug\net8.0\Part10_Class_Struct_Delegate.pdb
+C:\Users\Admin\Desktop\app\Part10_Class_Struct_Delegate\obj\Debug\net8.0\Part10_Class_Struct_Delegate.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Desktop\app\Part10_Class_Struct_Delegate\obj\Debug\net8.0\Part10_Class_Struct_Delegate.AssemblyInfoInputs.cache
+C:\Users\Admin\Desktop\app\Part10_Class_Struct_Delegate\obj\Debug\net8.0\Part10_Class_Struct_Delegate.AssemblyInfo.cs
+C:\Users\Admin\Desktop\app\Part10_Class_Struct_Delegate\obj\Debug\net8.0\Part10_Class_Struct_Delegate.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\app\Part10_Class_Struct_Delegate\obj\Debug\net8.0\Part10_Class_Struct_Delegate.sourcelink.json
+C:\Users\Admin\Desktop\app\Part10_Class_Struct_Delegate\obj\Debug\net8.0\Part10_Class_Struct_Delegate.dll
+C:\Users\Admin\Desktop\app\Part10_Class_Struct_Delegate\obj\Debug\net8.0\refint\Part10_Class_Struct_Delegate.dll
+C:\Users\Admin\Desktop\app\Part10_Class_Struct_Delegate\obj\Debug\net8.0\Part10_Class_Struct_Delegate.pdb
+C:\Users\Admin\Desktop\app\Part10_Class_Struct_Delegate\obj\Debug\net8.0\Part10_Class_Struct_Delegate.genruntimeconfig.cache
+C:\Users\Admin\Desktop\app\Part10_Class_Struct_Delegate\obj\Debug\net8.0\ref\Part10_Class_Struct_Delegate.dll

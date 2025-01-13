@@ -153,10 +153,31 @@ namespace Part11_Debugging_ErrorHandling_UnitTesting
                     }).Reverse();
             }
 
-            
 
+                    // [TestClass]
+                    // public class UnitTest1
+                    // {
+                    //     private SampleComputation sample;
 
+                    //     [TestInitialize]
+                    //     public void Init()
+                    //     {
+                    //         sample = new SampleComputation();
+                    //     }
 
+                    //     // Define the data rows and expected results
+                    //     [DataRow(1, 1, SampleOperator.Add, 2)]
+                    //     [DataRow(1, 5, SampleOperator.Add, 6)]
+                    //     [DataRow(10, 5, SampleOperator.Divide, 2)]
+                    //     [DataRow(100, 10, SampleOperator.Divide, 10)]
+                    //     [DataTestMethod]
+                    //     public void SampleComputationTest(int num1, int num2, SampleOperator op, int expected)
+                    //     {
+                    //         // Assert that the computed value matches the expected value
+                    //         Assert.AreEqual(expected, sample.Compute(num1, num2, op));
+                    //     }
+
+ 
 
 
     }

@@ -149,9 +149,50 @@ namespace Part10_Class_Struct_Delegate
 
             >> back again sa Person na Class : so far complete na yung fields , constructor and properties here  
 
-            
+
             */
+
+            #region -- Using Constructor --
+
+            var doray = new Person ("Maria");
+
+
+            #endregion
             
+
+            #region  --  Method of Class -- 
+            // Create a new person instance
+            var person = new Person("Joy", "NG")
+            {
+                NickName = "Pretty Joy",
+                BirthDate = new DateTime(1998, 6, 16) // YYYY/MM/DD
+            };
+
+            // Update Sample and NickName
+            person.Update(10, "Ace");
+
+            // Output the details
+            Console.WriteLine($@"
+                                Name: {person.FullName}
+                                Age: {person.GetAge()}
+                                Nickname: {person.NickName}
+                                SampleInt: {person.Sample}"
+                            );
+
+            #endregion
+
+
+
+
+            #region  -- Events --
+
+
+
+
+            #endregion
+
+
+
 
 
         }

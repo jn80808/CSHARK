@@ -20,22 +20,39 @@ namespace Part10_Class_Struct_Delegate
 
             #region  -- Constructor --
 
+                // -------- 1st Constructor --------
                 public Person()
                 {
                     //pag may gustong kang execute na code during initialization example  initial value yung variable or may tinatawag na function 
 
                 }
 
-                //Adding New Custom Construnctor 
-                // Constructor that takes only the first name
-                // yung result nito is an object na na may Peson na data type and the FirstName na property is may initial value kung ano man yung nilagay natin value sa firts na parameter 
-                public Person(string first) // have a 1 parameter firts and sa loob ng block of code,  kung anong value yung nakuha ni parameter istore lang sya dun sa loob ng variable na FirtsName 
+                // -------- 2nd Constructor --------
+                /*
+                    >> Adding New Custom Construnctor 
+                    >> Constructor that takes only the first name
+                    >> yung result nito is an object na na may Peson na data type and the FirstName na property is may initial value kung ano man yung nilagay natin value sa firts na parameter 
+                    >> have a 1 parameter firts and sa loob ng block of code,  kung anong value yung nakuha ni parameter istore lang sya dun sa loob ng variable na FirtsName 
+                */
+                public Person(string first) 
                 {
                     FirstName = first;
                 }
 
-                // Constructor that takes both first and last names, chaining to the first constructor
-                //have 2 parameter first & last and ang pinag kaiba lang nito is bago natin iexecute yung block of code nya is tatawag mona tayo ng ibang constructor yan yung purpose bat may : colon and this(first) , and yung ibig sabihin ng "this" na keywords is "this intance of class"   
+                // -------- 3rd Constructor --------
+                /* 
+                    >> Constructor that takes both first and last names, chaining to the first constructor
+                    >> have 2 parameter first & last and ang pinag kaiba lang nito is bago natin iexecute yung block of code nya is tatawag mona tayo ng ibang constructor yan yung purpose bat may : colon and this(first) , and yung ibig sabihin ng "this" na keywords is "this intance of class"  , which in our sample is this instance of class which is Person so like this instance of person and nag provide tayo ng parameter value which is first which is yung 1st parameter natin na first nilagay lang natin dito din sa loob ng this 
+                    >> ibig sabihin nito is pupunta mona sya  sa class nato (Line 32) and currently meron tayong 3 class constructor  from line 23 - 39 so yung constructor na may isang parameter lang ng firts ito yung execute nya lang yung block of code nung nasa loob  bago yung block of code natin dito sa line 39 since inside of block code natin dito is lastName lang so yung FirstName dun nya kukunin sa line 32 
+                    >> sa 1st construnctor Line 32 nag karon tayo ng initial value sa sa firts 
+                    >> and pwede naman di natin ilagay yung this(first)
+                    >> pwede natin iassigned yung FirstName = first parang ganto yung magiging view (FirstName = first, string last) kaso uulitin lang natin kung ano yung block of code dun sa line 32 and what if yung dun sa line 32 yung block of code nya is may 10k line of codes ibigsabihin icocopy mo yun lahat then iadd dun sa next constructor   if ganto yung approach panget tingnan and mahirap imaintain 
+                    >> what we call this is overloading 
+                    >> means may 3 constructor tayo and iba iba yung set up parameter 
+                    >> then proceed lang sa programs to test 
+                
+                */
+
                 public Person(string first, string last) : this(first)
                 {
                     LastName = last;
@@ -48,6 +65,7 @@ namespace Part10_Class_Struct_Delegate
 
             #region  -- Properties --
 
+            // -------- 1st Propertoes Manual--------
             //1st Properties : FirstName  which is manually pa sya format 
 
             public string FirstName 
@@ -66,6 +84,7 @@ namespace Part10_Class_Struct_Delegate
                 
             }
 
+            // -------- 2nd Propertoes : AutoImplementation --------
             //2nd properties  LastName : Automation Properties 
 
             // AutoImplementation of Properties 
@@ -80,13 +99,17 @@ namespace Part10_Class_Struct_Delegate
                 }
             }
 
+            // -------- 3rd Propertoes : private set --------
             //here naman autoImplementation and naka private yung set means pwede lang maka set value nito within the class
             public int Sample { get; private set; }
 
+             // --------4th  Propertoes : Both  private  --------
             //public int Sample1 {private get; private set; } // di pwedeng gawin both private si get and set kasi mag eeror ka 
 
             //Example of Other properties na may ginagawa bago mag return ng value 
             
+
+             // -------- 5h  Propertoes : Example Format  --------
             private string _nickName;
 
             public string NickName
@@ -106,6 +129,46 @@ namespace Part10_Class_Struct_Delegate
                 }
             }
 
+            #endregion
+
+
+
+
+            #region  -- Overloading  Method of Class  -- 
+
+            // ----- same METHOD Name Different Parameter -------
+
+
+            // -------- 1st Method  --------
+            // Method to update only the Sample property
+            public void Update(int sample)
+            {
+                Sample = sample;
+            }
+
+            // -------- 2nd Method  --------
+            // Method to update both Sample and NickName properties
+            public void Update(int sample, string nickName)
+            {
+                Update(sample); // Call the other Update method to set Sample
+                NickName = nickName;
+            }
+
+            // -------- 3rd Method  --------
+            public DateTime? BirthDate { get; set; }
+
+            public int? GetAge()
+            {
+                if (BirthDate.HasValue)// checling if yung BirthDate is have a value 
+                {
+                    // Calculate the age in years
+                    // yung result nito is double since TotalDays data type is double so sa unahan may casting tayo  (int?) since yung ineexpect ng class natin in integer public int? GetAge()
+                    return (int?)((DateTime.Now - BirthDate.Value).TotalDays / 365.25); 
+                }
+
+                // Return null if BirthDate is not set
+                return default; // so incase walang value return nya default which yung value nito is null 
+            }
 
 
             #endregion

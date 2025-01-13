@@ -1,0 +1,15 @@
+C:\Users\Admin\Desktop\app\Part11_Debugging_ErrorHandling_UnitTesting\bin\Debug\net8.0\Part11_Debugging_ErrorHandling_UnitTesting.exe
+C:\Users\Admin\Desktop\app\Part11_Debugging_ErrorHandling_UnitTesting\bin\Debug\net8.0\Part11_Debugging_ErrorHandling_UnitTesting.deps.json
+C:\Users\Admin\Desktop\app\Part11_Debugging_ErrorHandling_UnitTesting\bin\Debug\net8.0\Part11_Debugging_ErrorHandling_UnitTesting.runtimeconfig.json
+C:\Users\Admin\Desktop\app\Part11_Debugging_ErrorHandling_UnitTesting\bin\Debug\net8.0\Part11_Debugging_ErrorHandling_UnitTesting.dll
+C:\Users\Admin\Desktop\app\Part11_Debugging_ErrorHandling_UnitTesting\bin\Debug\net8.0\Part11_Debugging_ErrorHandling_UnitTesting.pdb
+C:\Users\Admin\Desktop\app\Part11_Debugging_ErrorHandling_UnitTesting\obj\Debug\net8.0\Part11_Debugging_ErrorHandling_UnitTesting.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Desktop\app\Part11_Debugging_ErrorHandling_UnitTesting\obj\Debug\net8.0\Part11_Debugging_ErrorHandling_UnitTesting.AssemblyInfoInputs.cache
+C:\Users\Admin\Desktop\app\Part11_Debugging_ErrorHandling_UnitTesting\obj\Debug\net8.0\Part11_Debugging_ErrorHandling_UnitTesting.AssemblyInfo.cs
+C:\Users\Admin\Desktop\app\Part11_Debugging_ErrorHandling_UnitTesting\obj\Debug\net8.0\Part11_Debugging_ErrorHandling_UnitTesting.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\app\Part11_Debugging_ErrorHandling_UnitTesting\obj\Debug\net8.0\Part11_Debugging_ErrorHandling_UnitTesting.sourcelink.json
+C:\Users\Admin\Desktop\app\Part11_Debugging_ErrorHandling_UnitTesting\obj\Debug\net8.0\Part11_Debugging_ErrorHandling_UnitTesting.dll
+C:\Users\Admin\Desktop\app\Part11_Debugging_ErrorHandling_UnitTesting\obj\Debug\net8.0\refint\Part11_Debugging_ErrorHandling_UnitTesting.dll
+C:\Users\Admin\Desktop\app\Part11_Debugging_ErrorHandling_UnitTesting\obj\Debug\net8.0\Part11_Debugging_ErrorHandling_UnitTesting.pdb
+C:\Users\Admin\Desktop\app\Part11_Debugging_ErrorHandling_UnitTesting\obj\Debug\net8.0\Part11_Debugging_ErrorHandling_UnitTesting.genruntimeconfig.cache
+C:\Users\Admin\Desktop\app\Part11_Debugging_ErrorHandling_UnitTesting\obj\Debug\net8.0\ref\Part11_Debugging_ErrorHandling_UnitTesting.dll

@@ -11,13 +11,13 @@ namespace Part12_OOP_Abstract_Interface_Generic
     // {
 
     // }
-    public class Sara :  Zunitsu 
+    public class abs_Sara :  Zunitsu 
     {
 
     }
 
     // and then we add new method Zunitsu and naka inherent din sya kay Person natin means automatic may FullName and DoSomething din syang members 
-    public class Zunitsu : Part12_Person {
+    public class Zunitsu : abs_Part12_Person {
         public bool KidlatSmaurai { get; set; }
     }
         

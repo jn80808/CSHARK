@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace Part12_OOP_Abstract_Interface_Generic
 {
-    public abstract class Part12_Person
+    public abstract class abs_Part12_Person
     /*
     >> here nag add na sya ng abstract na class 
     >> means this is now a abstract class and di na pwede mag iinstantiate sa Person na class 

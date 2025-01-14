@@ -1,6 +1,8 @@
 ﻿
 using System.Security.Cryptography.X509Certificates;
 using static Part12_OOP_Abstract_Interface_Generic.Abstract_vs_Interface;
+using static Part12_OOP_Abstract_Interface_Generic.poly_SampleOperation;
+using static Part12_OOP_Abstract_Interface_Generic.SampleGenerics;
 
 namespace Part12_OOP_Abstract_Interface_Generic
 {
@@ -172,8 +174,10 @@ namespace Part12_OOP_Abstract_Interface_Generic
                        
             */
 
-
+                //-----------------------
                 //--------- POLY --------
+                //-----------------------
+
                 new poly_SampleOperation ()
                     .Process();
 
@@ -186,7 +190,9 @@ namespace Part12_OOP_Abstract_Interface_Generic
 
                 */
 
+                //---------------------------------------
                 //--------- ABSTRACT VS INTEFACE --------
+                //---------------------------------------
 
 
 
@@ -215,7 +221,7 @@ namespace Part12_OOP_Abstract_Interface_Generic
                 Document pdfDoc = new PDF ();
                 Document woedDoc = new Word ();
 
-                
+
 
                 var Iexcel = new Excel();
                 IDokumento dokumentoExcel = new Excel ();
@@ -225,6 +231,22 @@ namespace Part12_OOP_Abstract_Interface_Generic
                 Word newWord1 = new NewDocument();
                 IDoc1 doc1Excel = new NewDocument ();
                 IDoc2 doc2Excel = new NewDocument (); 
+
+
+                //---------------------------
+                //--------- GENIRIC  --------
+                //---------------------------
+
+                var processor = new SampleGeneric <TagaMultiply> ();
+                processor.Process(9,9);
+
+                var processDiv = new SampleGeneric<TagaDivide>();
+                processDiv.Process(9,9);
+
+
+
+
+
 
 
 

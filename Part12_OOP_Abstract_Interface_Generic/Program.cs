@@ -167,7 +167,6 @@ namespace Part12_OOP_Abstract_Interface_Generic
                     >> and kung multiple yung Placeholder Data Type pwede syang T1 , T2, T3 ......Tn
                     >> TypeName <T1,T2,T3,......Tn>
                        
-
             */
 
 

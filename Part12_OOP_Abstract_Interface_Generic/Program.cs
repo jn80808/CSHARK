@@ -175,6 +175,15 @@ namespace Part12_OOP_Abstract_Interface_Generic
                 //--------- POLY --------
                 new poly_SampleOperation ()
                     .Process();
+
+
+                /*
+                getting error
+                The fixxed :
+                dotnet add reference ../Part10_Class_Struct_Delegate/Part10_Class_Struct_Delegate.csproj
+
+
+                */
   
         }
     }

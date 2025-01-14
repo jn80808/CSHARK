@@ -1,5 +1,6 @@
 ﻿
 using System.Security.Cryptography.X509Certificates;
+using static Part12_OOP_Abstract_Interface_Generic.Abstract_vs_Interface;
 
 namespace Part12_OOP_Abstract_Interface_Generic
 {
@@ -184,6 +185,50 @@ namespace Part12_OOP_Abstract_Interface_Generic
 
 
                 */
+
+                //--------- ABSTRACT VS INTEFACE --------
+
+
+
+                // --- ABSTRACT ---
+
+                
+                Document pdf = new PDF { Name = "SamplePDF" };
+                pdf.Process();
+                pdf.Print();
+
+                Document word = new Word { Name = "SampleWord" };
+                word.Process();
+                word.Print();
+
+                IDokumento excel = new Excel { Name = "SampleExcel" };
+                excel.Process();
+                excel.Print();
+
+                // --- INTERFACE ---
+
+                var Ipdf = new PDF ();
+                var Iword = new Word (); // using variable 
+
+
+                // and here instead of using var we use Documenent kasi pag niview natin yung class nya is naka inhiret sya sa Document which is the parent kaya pwede yan
+                Document pdfDoc = new PDF ();
+                Document woedDoc = new Word ();
+
+                
+
+                var Iexcel = new Excel();
+                IDokumento dokumentoExcel = new Excel ();
+                dokumentoExcel.Print();
+
+                //Word newWord = NewDocument();
+                Word newWord1 = new NewDocument();
+                IDoc1 doc1Excel = new NewDocument ();
+                IDoc2 doc2Excel = new NewDocument (); 
+
+
+
+
   
         }
     }

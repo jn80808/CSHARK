@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "Part12_OOP_Abstract_Interface_Generic/1.0.0": {
+        "dependencies": {
+          "Part10_Class_Struct_Delegate": "1.0.0"
+        },
+        "runtime": {
+          "Part12_OOP_Abstract_Interface_Generic.dll": {}
+        }
+      },
+      "Part10_Class_Struct_Delegate/1.0.0": {
+        "runtime": {
+          "Part10_Class_Struct_Delegate.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Part12_OOP_Abstract_Interface_Generic/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Part10_Class_Struct_Delegate/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

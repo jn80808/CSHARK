@@ -172,7 +172,9 @@ namespace Part12_OOP_Abstract_Interface_Generic
             */
 
 
-                
+                //--------- POLY --------
+                new poly_SampleOperation ()
+                    .Process();
   
         }
     }

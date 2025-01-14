@@ -78,6 +78,16 @@ namespace Part12_OOP_Abstract_Interface_Generic
             }
         }
 
+        // -- Example 3 : use in the method 
+
+        public Ace Get <Ace> (Ace ace1, Ace ace2)
+            where Ace : class , new ()
+            {
+                return ace1; 
+            } 
+
+
+
 
 
 

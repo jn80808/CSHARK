@@ -7,6 +7,9 @@ namespace Part12_OOP_Abstract_Interface_Generic
         {
 
             /*
+                -------------
+                --- OOP ----
+                -------------
                 OOP : is a programming paradigm that relies on the concept of the classes and objects 
                 Object : is yung Intance ng class ; eg. var a = new ClassName();
                 Class : BluePrint 
@@ -124,19 +127,46 @@ namespace Part12_OOP_Abstract_Interface_Generic
                                         : Nagagawa natin bagohin yung Forms or Functionality na nainherit natin Propertues or Function gamit yung OverRidding and Overloading 
                                         : OverLoading na encounter na sa Part 10 yung Person 
 
+                -------------------------------
+                --- ABSTRACT VS INTERFACE ----
+                --------------------------------
                 
                     >> ABSTRACT VS INTERFACE : Pwede tayong gumamit ng Abstract and Interface para makagawa tayo ng Abstraction 
                     >> But the Questions is When to Use Abstraction and Interface 
+                    >> ABSTRACT : class allow you to create functionality that subclasses can implement or override. 
+                    >> ABTRACT : Gagamit lang tayo ng Abstact pag may Default Functionality or Block of Codes na gustong isama sa pag inhiret means may default function sya and kung may gusto baguhin or iadd dun sa default functionalitu gagamit lang tayong overrriding 
+                    >> INTERFACE : An Interface only allows you to define functionality, not implement it 
+                    >> INTERFACE : Gagamit naman tayo ng Inteface if gusto natin i-force yung mga subclass or yung mga nag iinheret na class na implement lang ng properties and methods na nakadefined sa interface 
+                                 : and interface is a contract kungbaga yung class natin is may contrata sa interface na ininherit nya na need implement sa class natin mismo 
+                                 : and sa interface wala syang pake pano po to implement sa class mo ang pinanghahawakan nya lang yung contract nyo na implement mo yung na inherit mo 
+                    >> and this is one to consider choosing between sa Interface or Abstract kasi sa isang class isa lang yung pwedeng mainherit na abstract class and for interface pwede multiple yung iinheret natin 
+                    >> Abstract Class : Isang besses lang sa isang class 
+                    >> Inheret : Pwede multiple inheret sya sa isang class 
+                    >> And whereas a class can extend only one abstract class , it can take advantage of multiple interfaces
 
 
 
-
-
-
-
-
-
-                                            
+                -------------------
+                --- GENERIC  ----
+                -------------------
+                    >> C# allows you to define generic Clases, Interface, Abstract class, Fields, Methods, Static Methods, Properties, Events, Delegates, and Operators using the type parameter and without 
+                        the specific data type. 
+                    >> Generic is way natin para gumawa ng generic class means general form sya hindi sya specific sa isang form lang 
+                    >> Example meron tayong delivery Truck for Fruits means para lang sya sa Fruits and yun lang yung idedeliver nya since specific 
+                    >> pero pag gumamit tayo ng Generic na Truct means kaya ng mag process ng ibat ibang class or mag deliver ng kahit ano 
+                    >> and since wala syang specific na data type and kahit anong data type is kaya nyang iprocess means yung truck mo pwede lagyan ulit ng truck sa loob or barko 
+                    >> kaya its important din na mag lagay ng constring para malimit natin yung pwede nya lang mapasok sa loob ng truck, so constring is optional lang di sya required pag gumagawa ng Generic 
+                    >> A type parameter is placeholder for particular type specified when creating an instance of the generic type 
+                    >> and sa generic natin tayong type parameter and yun na yung placeholder natin 
+                    >> bali dito na natin nilalagay yung data type na kaylangan natin i-process 
+                    >> example yung placholder natin is lalagyan natin ng fruitas para sa generic natin na truck ibigsabihin yung result nya is truck na nag proprocess ng fruitas 
+                    >> A generic type is declareed by spcifying a type parameter in an angle brackets after a type name, e.g. TypeName<T> where T is a type parameter 
+                    >> yung placeholder natin ng data type is nilalagay natin sa loob ng angle brackets <T> after ng Generic Type natin pwede syang multiple seperated by comman and yung placeholder Nmae is kahit ano yan kasi custome name yan 
+                    >> Placholder Name : Custome Name : TypeName 
+                    >> Placeholder Data Type : <> : <T> 
+                    >> and kung multiple yung Placeholder Data Type pwede syang T1 , T2, T3 ......Tn
+                    >> TypeName <T1,T2,T3,......Tn>
+                       
 
             */
 

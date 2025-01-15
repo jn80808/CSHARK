@@ -148,5 +148,10 @@ void PrintName()
 {
     throw new NotImplementedException();
 }
+
+void Process()
+{
+    throw new NotImplementedException();
+}
 #endregion
 

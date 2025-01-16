@@ -6,12 +6,13 @@ O - Open for Extension, Closed for Modification: Software entities should be ope
 L - Liskov's Substitution : A class should have only one reason to change
 I - Interface Segragation : A class should have only one reason to change 
 D - Dependency Inversion : High-level module/class should not depend on low-level modules/class Both should depend upon abstraction 
-S
+
 
 */
 
 
 using System;
+using static Part13._1_SolidPrinciple.D_Repository;
 using static Part13._1_SolidPrinciple.I_WorkWork;
 using static Part13._1_SolidPrinciple.L_Employee;
 using static Part13._1_SolidPrinciple.O_SampleCalculator;
@@ -149,6 +150,70 @@ namespace Part13._1_SolidPrinciple
 
             #endregion
 
+            #region  -- D - Dependency Inversion    -- 
+
+                #region  -- Not - Dependency Inversion    -- 
+
+                    Console.WriteLine();
+                    Console.WriteLine("*********  -- Not - Dependency Inversion --  *********");
+                    Console.WriteLine();
+
+                        
+                    /*
+                        >> pag ginamit na to sa program magiging dependent yung program natin or  tighly couple na sya sa repository na connected sa database natin kasi yung Repository natin is our Implementation natin 
+                        >> di naman mali yung ganto pero di na sya Testable and at the same time pag may binago ka sa data source mo is babaguhin mo din yung application instead na data source lang kaya mahihirapan ka na imaintain pag malaki na yung application 
+                        >> kung baga may pakealam ka na sa implementation mo unlike sa interface is wla kang pake kung ano man basta implement ng mga mag iinherit sayou yung mga member or method or ano man code yung nasa loob ng code of block mo 
+
+                    */
+                    var repo = new Repository ();
+                    repo.Add ();
+                    repo.Delete();
+
+
+                #endregion
+
+                    
+                #region  -- USING - Dependency Inversion    -- 
+
+                    Console.WriteLine();
+                    Console.WriteLine("*********  -- USING  - Dependency Inversion --  *********");
+                    Console.WriteLine();
+
+                    // Dependency injection: inject the specific implementation
+                    IRepository2 dbRepository = new DatabaseRepository();
+                    RepositoryManager dbManager = new RepositoryManager(dbRepository);
+
+                    Console.WriteLine("Using Database Repository:");
+                    dbManager.PerformAddOperation();
+                    dbManager.PerformDeleteOperation();
+
+                    Console.WriteLine("\nUsing File Repository:");
+                    IRepository2 fileRepository = new FileRepository();
+                    RepositoryManager fileManager = new RepositoryManager(fileRepository);
+
+                    fileManager.PerformAddOperation();
+                    fileManager.PerformDeleteOperation();
+
+
+                #endregion
+
+                
+            #region  -- Change Implementation using API --
+
+                IRepository2 dbRepository1 = new DatabaseRepository();
+                dbRepository1.Add();
+
+
+
+
+            #endregion
+
+
+
+                
+
+
+            #endregion
 
 
 

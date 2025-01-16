@@ -37,7 +37,7 @@ namespace Part13._1_SolidPrinciple
 
         public class QuadraticQuation
         {
-            public void Calculate()
+            public void Calculate(int v, int v1, int v2)
             {
 
             }

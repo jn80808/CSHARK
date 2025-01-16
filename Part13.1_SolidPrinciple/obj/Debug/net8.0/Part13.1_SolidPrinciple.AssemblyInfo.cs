@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Part13.1_SolidPrinciple")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9f893aa74ede2106757ff3b225a40fa689944460")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+dafca451d51b08e182661e42e4b53ab756dab8f7")]
 [assembly: System.Reflection.AssemblyProductAttribute("Part13.1_SolidPrinciple")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Part13.1_SolidPrinciple")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

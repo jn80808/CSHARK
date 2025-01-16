@@ -1,0 +1,15 @@
+C:\Users\Admin\Desktop\app\Part13.1_SolidPrinciple\obj\Debug\net8.0\Part13.1_SolidPrinciple.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Desktop\app\Part13.1_SolidPrinciple\obj\Debug\net8.0\Part13.1_SolidPrinciple.AssemblyInfoInputs.cache
+C:\Users\Admin\Desktop\app\Part13.1_SolidPrinciple\obj\Debug\net8.0\Part13.1_SolidPrinciple.AssemblyInfo.cs
+C:\Users\Admin\Desktop\app\Part13.1_SolidPrinciple\obj\Debug\net8.0\Part13.1_SolidPrinciple.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\app\Part13.1_SolidPrinciple\obj\Debug\net8.0\Part13.1_SolidPrinciple.sourcelink.json
+C:\Users\Admin\Desktop\app\Part13.1_SolidPrinciple\bin\Debug\net8.0\Part13.1_SolidPrinciple.exe
+C:\Users\Admin\Desktop\app\Part13.1_SolidPrinciple\bin\Debug\net8.0\Part13.1_SolidPrinciple.deps.json
+C:\Users\Admin\Desktop\app\Part13.1_SolidPrinciple\bin\Debug\net8.0\Part13.1_SolidPrinciple.runtimeconfig.json
+C:\Users\Admin\Desktop\app\Part13.1_SolidPrinciple\bin\Debug\net8.0\Part13.1_SolidPrinciple.dll
+C:\Users\Admin\Desktop\app\Part13.1_SolidPrinciple\bin\Debug\net8.0\Part13.1_SolidPrinciple.pdb
+C:\Users\Admin\Desktop\app\Part13.1_SolidPrinciple\obj\Debug\net8.0\Part13.1_SolidPrinciple.dll
+C:\Users\Admin\Desktop\app\Part13.1_SolidPrinciple\obj\Debug\net8.0\refint\Part13.1_SolidPrinciple.dll
+C:\Users\Admin\Desktop\app\Part13.1_SolidPrinciple\obj\Debug\net8.0\Part13.1_SolidPrinciple.pdb
+C:\Users\Admin\Desktop\app\Part13.1_SolidPrinciple\obj\Debug\net8.0\Part13.1_SolidPrinciple.genruntimeconfig.cache
+C:\Users\Admin\Desktop\app\Part13.1_SolidPrinciple\obj\Debug\net8.0\ref\Part13.1_SolidPrinciple.dll

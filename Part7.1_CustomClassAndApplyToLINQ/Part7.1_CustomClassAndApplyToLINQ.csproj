@@ -6,6 +6,8 @@
     <RootNamespace>Part7._1_CustomClassAndApplyToLINQ</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <Authors>Joy Ng</Authors>
+    <Copyright>© 2025 Joy Ng. All Rights Reserved.</Copyright>
   </PropertyGroup>
 
 </Project>

@@ -10,10 +10,11 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("app")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("Joy Ng")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
+[assembly: System.Reflection.AssemblyCopyrightAttribute("© 2025 Joy Ng. All Rights Reserved.")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c4e77db415e3d7fb2f33689fbd57f2649df65c8f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4c31d0c1468388b34fe7d736476a7e954fa31b74")]
 [assembly: System.Reflection.AssemblyProductAttribute("app")]
 [assembly: System.Reflection.AssemblyTitleAttribute("app")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

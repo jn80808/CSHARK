@@ -10,10 +10,11 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("Part7.1_CustomClassAndApplyToLINQ")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("Joy Ng")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
+[assembly: System.Reflection.AssemblyCopyrightAttribute("© 2025 Joy Ng. All Rights Reserved.")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f65ba6a904113176a440b37b2eca64575c2161c9")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4c31d0c1468388b34fe7d736476a7e954fa31b74")]
 [assembly: System.Reflection.AssemblyProductAttribute("Part7.1_CustomClassAndApplyToLINQ")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Part7.1_CustomClassAndApplyToLINQ")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
